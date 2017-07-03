@@ -88,7 +88,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -124,11 +124,6 @@
        d="m 128.62346,109.16298 v 35.64039 h 20.11203 l 1.6838,-3.3676 h -18.70887 v -13.84456 h 15.52836 l 1.77734,-2.99342 h -17.39924 v -12.90912 h 16.65089 l 1.21608,-2.80633 z"
        id="path1185"
        inkscape:connector-curvature="0" />
-    <path
-       style="fill:#58be23;stroke:#58be23;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
-       d="m 173.30208,108.0875 c 0,0 -15.61042,0.66146 -15.34583,19.05 0.26458,18.38854 16.40416,18.12396 16.40416,18.12396 0,0 14.81667,0.92604 15.34584,-19.05 0.52916,-19.97605 -16.40417,-18.12396 -16.40417,-18.12396 z"
-       id="path1193"
-       inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.05071926px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#58be23;fill-opacity:1;stroke:#58be23;stroke-width:0.26921567;stroke-opacity:1;"
@@ -143,8 +138,8 @@
          style="font-size:10.05071926px;stroke-width:0.26921567;stroke:#58be23;stroke-opacity:1;fill:#58be23;fill-opacity:1;">smart economy</tspan></text>
     <path
        inkscape:connector-curvature="0"
-       id="path5194"
-       d="m 173.95689,111.32395 c 0,0 -12.96459,-0.39688 -12.30313,16.13958 0.66146,16.53646 12.7,14.94896 12.7,14.94896 0,0 11.77396,0.39687 12.03854,-15.875 0.26459,-16.27188 -12.43541,-15.21354 -12.43541,-15.21354 z"
-       style="fill:#ffffff;fill-opacity:1;stroke:#58be23;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       id="path5194-3"
+       d="m 170.56052,109.96152 c 0,0 -13.3102,-0.43198 -12.63111,17.56694 0.67909,17.99893 13.03856,16.27103 13.03856,16.27103 0,0 12.08782,0.43198 12.35946,-17.27897 0.27163,-17.71095 -12.76691,-16.559 -12.76691,-16.559 z"
+       style="fill:none;fill-opacity:1;stroke:#58be23;stroke-width:3.58794737;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
 </svg>
