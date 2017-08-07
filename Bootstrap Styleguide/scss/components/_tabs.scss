@@ -1,0 +1,208 @@
+.nav-tabs {
+  &.nav-justified {
+    &>li {
+      &>a {
+        border: 3px solid $neo-primary;
+        border-bottom-color: transparent;
+        border-width: 0 0 3px 0;
+        border-radius: 0;
+        color: $body-text-black;
+        &:focus,
+        &:hover {
+          background-color: transparent;
+          color: $neo-primary-dark;
+        }
+      }
+    }
+    &>.active {
+      border-radius: 0;
+      &>a {
+        border: 3px solid $neo-primary;
+        border-bottom-color: $neo-primary;
+        border-width: 0 0 3px 0;
+        border-radius: 0;
+        color: $neo-primary-dark;
+        font-weight: bold;
+        &:focus,
+        &:hover {
+          border: 3px solid $neo-primary;
+          border-bottom-color: $neo-primary;
+          border-width: 0 0 3px 0;
+        }        
+      }
+    }
+  }
+  &>li {
+    &>a {
+      padding: 25px 20px;
+    }
+  }
+}
+
+
+.tabs-below {
+  .nav-tabs {
+    &.nav-justified {
+      &>li {
+        &>a {
+          border: 3px solid $neo-primary;
+          border-bottom-color: transparent;
+          border-width: 0 0 3px 0;
+          border-radius: 0;
+          color: $body-text-black;
+          &:focus,
+          &:hover {
+            background-color: transparent;
+            color: $neo-primary-dark;
+          }
+        }
+      }
+      &>.active {
+        border-radius: 0;
+        &>a {
+          border: 3px solid $neo-primary;
+          border-bottom-color: $neo-primary;
+          border-width: 0 0 3px 0;
+          border-radius: 0;
+          color: $neo-primary-dark;
+          &:focus,
+          &:hover {
+            border: 3px solid $neo-primary;
+            border-bottom-color: $neo-primary;
+            border-width: 0 0 3px 0;
+          }        
+        }
+      }
+    }
+  }
+}
+
+
+.tab-content {
+  padding: 15px 15px 45px 15px;
+  line-height: 24px;
+}
+
+
+.panel{
+  &.panel-dark {
+     &>.tabs-below {
+      .nav-tabs {
+        &.nav-justified {
+          &>li {
+            &>a {
+              border: 3px solid $neo-primary;
+              border-top-color: transparent;
+              border-width: 3px 0 0 0;
+              border-radius: 0;
+              @include color-opacity(#FFF, 0.48);
+              transition: color .2s ease-in-out;
+              &:focus,
+              &:hover {
+                background-color: transparent;
+                color: lighten($neo-primary-dark, 10%);            
+              }
+            }
+          }
+          &>.active {
+            &>a {
+              border: 3px solid $neo-primary;
+              border-top-color: $neo-primary;
+              border-width: 3px 0 0 0;
+              border-radius: 0;
+              color: $neo-primary-dark;
+              background-color: transparent;
+              &:focus,
+              &:hover {
+                border: 3px solid $neo-primary;
+                border-top-color: $neo-primary;
+                border-width: 3px 0 0 0;
+              }        
+            }
+          }
+        }
+      }    
+    }
+  }
+}
+.panel{
+   &>.tabs-below {
+    .nav-tabs {
+      &.nav-justified {
+        &>li {
+          &>a {
+            border: 3px solid $neo-primary;
+            border-top-color: transparent;
+            border-width: 3px 0 0 0;
+            border-radius: 0;
+            color: $body-text-black;
+            transition: color .2s ease-in-out;
+            &:focus,
+            &:hover {
+              background-color: transparent;
+              color: lighten($neo-primary-dark, 10%);            
+            }
+          }
+        }
+        &>.active {
+          &>a {
+            border: 3px solid $neo-primary;
+            border-top-color: $neo-primary;
+            border-width: 3px 0 0 0;
+            border-radius: 0;
+            color: $neo-primary-dark;
+            background-color: transparent;
+            &:focus,
+            &:hover {
+              border: 3px solid $neo-primary;
+              border-top-color: $neo-primary;
+              border-width: 3px 0 0 0;
+            }        
+          }
+        }
+      }
+    }    
+  }
+}
+
+
+.panel.panel-dark {
+  .nav-tabs {
+    &.nav-justified {
+      &>li {
+        &>a {
+          border: 3px solid $neo-primary;
+          border-bottom-color: transparent;
+          border-width: 0 0 3px 0;
+          border-radius: 0;
+          @include color-opacity(#FFF, 0.48);
+          transition: color .2s ease-in-out;
+          &:focus,
+          &:hover {
+            background-color: transparent;
+            color: lighten($neo-primary-dark, 10%);            
+          }
+        }
+      }
+      &>.active {
+        &>a {
+          border: 3px solid $neo-primary;
+          border-bottom-color: $neo-primary;
+          border-width: 0 0 3px 0;
+          border-radius: 0;
+          color: $neo-primary-dark;
+          background-color: transparent;
+          &:focus,
+          &:hover {
+            border: 3px solid $neo-primary;
+            border-bottom-color: $neo-primary;
+            border-width: 0 0 3px 0;
+          }        
+        }
+      }
+    }
+  }
+  .tab-content {
+    color: $body-text-white;
+  }
+}

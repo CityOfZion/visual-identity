@@ -1,0 +1,9 @@
+.panel {
+  background-color: #FFF;
+  border: none;
+  border-radius: 2px;
+  @include box_shadow(1);
+  &.panel-dark {
+    background-color: $medium-grey;
+  }
+}

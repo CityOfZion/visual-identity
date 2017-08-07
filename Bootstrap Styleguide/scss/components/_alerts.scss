@@ -1,0 +1,132 @@
+.alert {  
+  &.alert-success {
+    color: darken($success-green, 20%);
+    border-color: darken($success-green, 5%);
+    @include background-opacity($success-green, 0.87);
+    .close {
+      color: darken($success-green, 20%);
+    }
+    .btn-success {
+      background-color: darken($success-green, 10%);
+    }
+    &.dark {
+      color: $body-text-white;
+      .close {
+        color: lighten($success-green, 5%);
+        &:hover,
+        &:focus {
+          color: lighten($success-green, 10%);
+          text-decoration: none;
+          cursor: pointer;
+          filter: alpha(opacity=100);
+          opacity: 1;
+          outline: none;
+          text-shadow: none;
+        }
+      }
+    }
+  }
+  &.alert-warning {
+    color: darken($warning-orange, 30%);
+    border-color: darken($warning-orange, 5%);
+    @include background-opacity($warning-orange, 0.67);
+    .close {
+      color: darken($warning-orange, 30%);
+    }
+    .btn-warning {
+      background-color: darken($warning-orange, 10%);
+    }
+    &.dark {
+      color: $body-text-white;
+      .close {
+        color: lighten($warning-orange, 5%);
+        &:hover,
+        &:focus {
+          color: lighten($warning-orange, 10%);
+          text-decoration: none;
+          cursor: pointer;
+          filter: alpha(opacity=100);
+          opacity: 1;
+          outline: none;
+          text-shadow: none;
+        }
+      }
+    }
+  }
+  &.alert-danger {
+    color: darken($danger-red, 40%);
+    border-color: darken($danger-red, 5%);
+    @include background-opacity($danger-red, 0.67);
+    .close {
+      color: darken($danger-red, 40%);
+    }
+    .btn-danger {
+      background-color: darken($danger-red, 10%);
+    }
+    &.dark {
+      color: $body-text-white;
+      .close {
+        color: lighten($danger-red, 5%);
+        &:hover,
+        &:focus {
+          color: lighten($danger-red, 10%);
+          text-decoration: none;
+          cursor: pointer;
+          filter: alpha(opacity=100);
+          opacity: 1;
+          outline: none;
+          text-shadow: none;
+        }
+      }
+    }
+  }
+  &.alert-info {
+    color: darken($info-blue, 20%);
+    border-color: darken($info-blue, 5%);
+    @include background-opacity($info-blue, 0.67);
+    .close {
+      color: darken($info-blue, 20%);
+    }
+    .btn-info {
+      background-color: darken($info-blue, 10%);
+    }
+    &.dark {
+      color: $body-text-white;
+      .close {
+        color: lighten($info-blue, 5%);
+        &:hover,
+        &:focus {
+          color: lighten($info-blue, 10%);
+          text-decoration: none;
+          cursor: pointer;
+          filter: alpha(opacity=100);
+          opacity: 1;
+          outline: none;
+          text-shadow: none;
+        }
+      }
+    }
+  }
+  .close {
+    float: right;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 0.75;
+    color: $body-text-white;
+    text-shadow: none;
+    opacity: 1;   
+    &:hover,
+    :focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+      filter: alpha(opacity=50);
+      opacity: .5;
+      outline: none;
+      text-shadow: none;
+    }
+  }
+  &>p>.btn {
+    margin-top: 20px;
+  }
+}

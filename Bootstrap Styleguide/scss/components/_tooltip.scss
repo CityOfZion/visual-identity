@@ -1,0 +1,35 @@
+.tooltip {
+  border-radius: 2px;
+  user-select: none;
+  &.top,
+  &.top-left,
+  &.top-right {
+    .tooltip-arrow {
+      border-top-color: $dark-grey;
+    }
+  }
+  &.right {
+    .tooltip-arrow {
+      border-right-color: $dark-grey;
+    }
+  }
+  &.left {
+    .tooltip-arrow {
+      border-left-color: $dark-grey;
+    }
+  }
+  &.bottom,
+  &.bottom-left,
+  &.bottom-right {
+    .tooltip-arrow {
+      border-bottom-color: $dark-grey;
+    }
+  }
+}
+.tooltip-inner {
+  color: $body-text-white;
+  font-size: 13px;
+  background-color: $dark-grey;
+  font-family: $heading-font;
+  padding: 15px 20px;
+}
