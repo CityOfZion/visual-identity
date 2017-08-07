@@ -1,0 +1,440 @@
+.pagination {
+  border-radius: 2px;
+  font-size: 13px;
+  &>li {
+    &:first-child {
+      &>a {
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px; 
+      }
+    }
+    &:last-child {
+      &>a {
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px; 
+      }
+    }
+    &>a {
+      color: $body-text-black;
+      border-color: darken($grey, 10%);
+      transition: box-shadow .2s ease-in-out,
+                  color .2s ease-in-out;
+      @include box_shadow(1);
+      &:focus,
+      &:hover {
+        background-color: darken($grey, 10%);
+        border-color: darken($grey, 15%);
+        transition: box-shadow .2s ease-in-out,
+                    color .2s ease-in-out;
+        @include color-opacity(#FFF, 0.87);
+        @include box_shadow(2);        
+      }
+    }
+  }
+  &>.active {
+    &>a {
+      background-color: $grey;
+      border-color: darken($grey, 10%);
+      color: $body-text-white;
+      &:focus,
+      &:hover {
+        background-color: darken($grey, 10%);
+        border-color: darken($grey, 15%);
+      }
+    }
+    &>span {
+      &:focus,
+      &:hover {
+        background-color: darken($grey, 10%);
+        border-color: darken($grey, 15%);
+      }
+    }
+  }
+  &>.disabled {
+    &>a {
+      color: $light-grey;
+      border-color: darken($grey, 10%);  
+      background-color: transparent;
+      &:focus,
+      &:hover {
+        color: $light-grey;
+        border-color: darken($grey, 15%);
+        @include box_shadow(1);
+        background-color: transparent;
+      }
+    }    
+  }
+  &.pagination-primary {
+    &>li {
+      &>a {
+        color: $body-text-black;
+        border-color: darken($neo-primary, 10%);
+        &:focus,
+        &:hover {
+          color: $body-text-white;
+          background-color: darken($neo-primary, 10%);
+          border-color: darken($neo-primary, 15%);  
+        }
+      }
+    }
+    &>.active {
+      &>a {
+        background-color: $neo-primary;
+        border-color: darken($neo-primary, 10%);
+        color: $body-text-white;
+        &:focus,
+        &:hover {
+          background-color: darken($neo-primary, 10%);
+          border-color: darken($neo-primary, 15%);
+        }
+      }
+      &>span {
+        &:focus,
+        &:hover {
+          background-color: darken($neo-primary, 10%);
+          border-color: darken($neo-primary, 15%);
+        }
+      }
+    }
+    &>.disabled {
+      &>a {
+        color: $light-grey;
+        border-color: darken($neo-primary, 10%);  
+        &:focus,
+        &:hover {
+          color: $light-grey;
+          background-color: transparent;
+          border-color: darken($neo-primary, 15%);  
+        }
+      }    
+    }
+  }
+  &.pagination-success {
+    &>li {
+      &>a {
+        color: $body-text-black;
+        border-color: darken($success-green, 10%);
+        &:focus,
+        &:hover {
+          color: $body-text-white;
+          background-color: darken($success-green, 10%);
+          border-color: darken($success-green, 15%);  
+        }
+      }
+    }
+    &>.active {
+      &>a {
+        background-color: $success-green;
+        border-color: darken($success-green, 10%);
+        color: $body-text-white;
+        &:focus,
+        &:hover {
+          background-color: darken($success-green, 10%);
+          border-color: darken($success-green, 15%);
+        }
+      }
+      &>span {
+        &:focus,
+        &:hover {
+          background-color: darken($success-green, 10%);
+          border-color: darken($success-green, 15%);
+        }
+      }
+    }
+    &>.disabled {
+      &>a {
+        color: $light-grey;
+        border-color: darken($success-green, 10%);  
+        &:focus,
+        &:hover {
+          color: $light-grey;
+          background-color: transparent;
+          border-color: darken($success-green, 15%);  
+        }
+      }    
+    }
+  }
+  &.pagination-warning {
+    &>li {
+      &>a {
+        color: $body-text-black;
+        border-color: darken($warning-orange, 10%);
+        &:focus,
+        &:hover {
+          color: $body-text-white;
+          background-color: darken($warning-orange, 10%);
+          border-color: darken($warning-orange, 15%);  
+        }
+      }
+    }
+    &>.active {
+      &>a {
+        background-color: $warning-orange;
+        border-color: darken($warning-orange, 10%);
+        color: $body-text-black;
+        &:focus,
+        &:hover {
+          background-color: darken($warning-orange, 10%);
+          border-color: darken($warning-orange, 15%);
+        }
+      }
+      &>span {
+        &:focus,
+        &:hover {
+          background-color: darken($warning-orange, 10%);
+          border-color: darken($warning-orange, 15%);
+        }
+      }
+    }
+    &>.disabled {
+      &>a {
+        color: $light-grey;
+        border-color: darken($warning-orange, 10%);  
+        &:focus,
+        &:hover {
+          color: $light-grey;
+          background-color: transparent;
+          border-color: darken($warning-orange, 15%);  
+        }
+      }    
+    }
+  }
+  &.pagination-danger {
+    &>li {
+      &>a {
+        color: $body-text-black;
+        border-color: darken($danger-red, 10%);
+        &:focus,
+        &:hover {
+          color: $body-text-white;
+          background-color: darken($danger-red, 10%);
+          border-color: darken($danger-red, 15%);  
+        }
+      }
+    }
+    &>.active {
+      &>a {
+        background-color: $danger-red;
+        border-color: darken($danger-red, 10%);
+        color: $body-text-white;
+        &:focus,
+        &:hover {
+          background-color: darken($danger-red, 10%);
+          border-color: darken($danger-red, 15%);
+        }
+      }
+      &>span {
+        &:focus,
+        &:hover {
+          background-color: darken($danger-red, 10%);
+          border-color: darken($danger-red, 15%);
+        }
+      }
+    }
+    &>.disabled {
+      &>a {
+        color: $light-grey;
+        border-color: darken($danger-red, 10%);  
+        &:focus,
+        &:hover {
+          color: $light-grey;
+          background-color: transparent;
+          border-color: darken($danger-red, 15%);  
+        }
+      }    
+    }
+  }
+  &.pagination-info {
+    &>li {
+      &>a {
+        color: $body-text-black;
+        border-color: darken($info-blue, 10%);
+        &:focus,
+        &:hover {
+          color: $body-text-white;
+          background-color: darken($info-blue, 10%);
+          border-color: darken($info-blue, 15%);  
+        }
+      }
+    }
+    &>.active {
+      &>a {
+        background-color: $info-blue;
+        border-color: darken($info-blue, 10%);
+        color: $body-text-white;
+        &:focus,
+        &:hover {
+          background-color: darken($info-blue, 10%);
+          border-color: darken($info-blue, 15%);
+        }
+      }
+      &>span {
+        &:focus,
+        &:hover {
+          background-color: darken($info-blue, 10%);
+          border-color: darken($info-blue, 15%);
+        }
+      }
+    }
+    &>.disabled {
+      &>a {
+        color: $light-grey;
+        border-color: darken($info-blue, 10%);  
+        &:focus,
+        &:hover {
+          color: $light-grey;
+          background-color: transparent;
+          border-color: darken($info-blue, 15%);  
+        }
+      }    
+    }
+  }
+  &.pagination-default {
+    &>li {
+      &>a {
+        color: $body-text-black;
+        border-color: darken($light-grey, 10%);
+        &:focus,
+        &:hover {
+          color: $body-text-white;
+          background-color: darken($light-grey, 10%);
+          border-color: darken($light-grey, 15%);  
+        }
+      }
+    }
+    &>.active {
+      &>a {
+        background-color: $light-grey;
+        border-color: darken($light-grey, 10%);
+        color: $body-text-black;
+        &:focus,
+        &:hover {
+          background-color: darken($light-grey, 10%);
+          border-color: darken($light-grey, 15%);
+        }
+      }
+      &>span {
+        &:focus,
+        &:hover {
+          background-color: darken($light-grey, 10%);
+          border-color: darken($light-grey, 15%);
+        }
+      }
+    }
+    &>.disabled {
+      &>a {
+        color: $light-grey;
+        border-color: darken($light-grey, 10%);  
+        &:focus,
+        &:hover {
+          color: $light-grey;
+          background-color: transparent;
+          border-color: darken($light-grey, 15%);  
+        }
+      }    
+    }
+  }
+  &.pagination-link {
+    &>li {
+      &>a {
+        color: $body-text-black;
+        border-color: darken($light-grey, 10%);
+        box-shadow: none;
+        &:focus,
+        &:hover {
+          color: $neo-primary-dark;
+          background-color: transparent;
+          border-color: darken($light-grey, 15%);  
+        }
+      }
+    }
+    &>.active {
+      &>a {
+        background-color: $light-grey;
+        border-color: darken($light-grey, 10%);
+        color: $body-text-black;
+        box-shadow: none;
+        &:focus,
+        &:hover {
+          background-color: transparent;
+          border-color: darken($light-grey, 15%);
+        }
+      }
+      &>span {
+        &:focus,
+        &:hover {
+          background-color: transparent;
+          border-color: darken($light-grey, 15%);
+        }
+      }
+    }
+    &>.disabled {
+      &>a {
+        color: $light-grey;
+        border-color: darken($light-grey, 10%);  
+        box-shadow: none;
+        &:focus,
+        &:hover {
+          color: $light-grey;
+          background-color: transparent;
+          border-color: darken($light-grey, 15%);  
+        }
+      }    
+    }
+    &.pagination-neo {
+      &>li {
+        background-color: transparent;
+        &>a {
+          color: $neo-primary;
+          background-color: transparent;
+          border-color: darken($neo-primary, 10%);
+          box-shadow: none;
+          &:focus,
+          &:hover {
+            color: lighten($neo-primary, 10%);
+            background-color: darken($neo-primary, 10%);
+            border-color: lighten($neo-primary, 10%);
+          }
+        }
+      }
+      &>.active {
+        &>a {
+          background-color: $neo-primary;
+          border-color: darken($neo-primary, 10%);
+          color: $body-text-white;
+          box-shadow: none;
+          &:focus,
+          &:hover {
+            background-color: transparent;
+            background-color: darken($neo-primary, 10%);
+            border-color: darken($neo-primary, 15%);
+            border-color: lighten($neo-primary, 10%);
+          }
+        }
+        &>span {
+          &:focus,
+          &:hover {
+            background-color: transparent;
+            border-color: lighten($neo-primary, 10%);
+          }
+        }
+      }
+      &>.disabled {
+        &>a {
+          color: darken($neo-primary, 20%);
+          border-color: darken($neo-primary, 15%);
+          box-shadow: none;
+          &:focus,
+          &:hover {
+            color: $neo-primary;
+            background-color: transparent;
+            border-color: darken($neo-primary, 15%);
+          }
+        }    
+      }
+    }
+  }
+}
+.pager {
+  
+}

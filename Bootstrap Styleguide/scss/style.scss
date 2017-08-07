@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300|Open+Sans:400,400i,600,700,700i');
+
+// BASE COMPONENTS
+@import 'components/reset';
+@import 'components/mixins';
+@import 'components/colors';
+@import 'components/typography';
+@import 'components/helpers';
+
+// BOOTSTRAP COMPONENTS
+@import 'components/alerts';
+@import 'components/badges-labels';
+@import 'components/breadcrumb';
+@import 'components/buttons';
+@import 'components/dropdown';
+@import 'components/navigation';
+@import 'components/pagination';
+@import 'components/panels';
+@import 'components/pills';
+@import 'components/popover';
+@import 'components/progress';
+@import 'components/tabs';
+@import 'components/tooltip';
+
+body {
+  font-family: 'Open Sans', 'Helvetica', Arial, sans-serif; 
+}
+
+section {
+  margin-bottom: 40px;
+  .section-title {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10px 0 20px;
+  }
+}
+.swatch-card {
+  border-radius: 2px;
+  background-color: #FFF;
+  width: 100%;
+  overflow: hidden;
+  @include box_shadow(1);
+  .swatch-color {
+    height: 50px;
+    &.neo-primary-light {
+      background-color: $neo-primary-light;
+    }
+    &.neo-primary {
+      background-color: $neo-primary;
+    }
+    &.neo-primary-dark {
+      background-color: $neo-primary-dark;
+    }
+    &.dark-grey {
+      background-color: $dark-grey;
+    }
+    &.medium-grey {
+      background-color: $medium-grey;
+    }
+    &.grey {
+      background-color: $grey;
+    }
+    &.light-grey {
+      background-color: $light-grey;
+    }
+    .swatch-secondary {
+      width: 50%;
+      height: 50px;
+      &.success {
+        background-color: $success-green;
+      }
+      &.warning {
+        background-color: $warning-orange;
+      }
+      &.error {
+        background-color: $danger-red;
+      }
+      &.info {
+        background-color: $info-blue;
+      }
+      &.pink {
+        background-color: $pink;
+      }
+      &.purple {
+        background-color: $purple;
+      }
+    }
+    .swatch-secondary-light {
+      width: 50%;
+      height: 50px;
+      &.success {
+        background-color: lighten($success-green, 10%);
+      }
+      &.warning {
+        background-color: lighten($warning-orange, 10%);
+      }
+      &.error {
+        background-color: lighten($danger-red, 10%);
+      }
+      &.info {
+        background-color: lighten($info-blue, 10%);
+      }
+      &.pink {
+        background-color: lighten($pink, 10%);
+      }
+      &.purple {
+        background-color: lighten($purple, 10%);
+      }
+    } 
+  }
+  .swatch-info {
+    padding: 6px 12px;
+    h3 {
+      margin-bottom: 3px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    p {
+      font-size: 12px;
+      font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    }
+  }
+}
+.neo-highlight {
+  color: $neo-primary;
+}
+.example-dropdown {
+  display: block;
+  min-width: 200px;
+}
+.popover-example {
+  position: relative;
+  display: block;
+}
