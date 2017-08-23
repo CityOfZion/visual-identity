@@ -1,0 +1,196 @@
+/*
+
+Creator: Velocihamster
+Date of creation: 20-08-17
+Purpose: Set up general styles for City of Zion website for integration in to existing CSS
+
+--- 
+
+Fonts used:
+
+Headlines
+Orbitron (Bold)
+
+Body copy and links
+Source Sans Pro (Regular/semi-bold)
+
+Large numbers in governance section
+Teko (Medium)
+
+The sizes specced below assume the base font size is 16px. Please convert if this is otherwise.
+
+*/
+
+
+
+/* Desktop styles */
+
+/*************************
+
+DARKER TO LIGHTER BLUE GRADIENT
+
+*************************/
+
+/* Horizontal */
+background: #2a43c1; /* Old browsers */
+background: -moz-linear-gradient(left,  #2a43c1 0%, #4598ff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #2a43c1 0%,#4598ff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #2a43c1 0%,#4598ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a43c1', endColorstr='#4598ff',GradientType=1 ); /* IE6-9 */
+
+/* Vertical */
+background: #4598ff; /* Old browsers */
+background: -moz-linear-gradient(top, #4598ff 0%, #2a43c1 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #4598ff 0%,#2a43c1 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #4598ff 0%,#2a43c1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4598ff', endColorstr='#2a43c1',GradientType=0 ); /* IE6-9 */
+
+
+/*************************
+
+TEXT STYLES - HEADLINES
+
+*************************/
+
+/* City of Zion */
+.h1-headline {
+	font-size: 4.25em;
+	color: #FFFFFF; /* White */
+	letter-spacing: 1.05em;
+	font-weight: 700;
+	margin-bottom: 6px;
+}
+
+/* Projects, Governance and Resources */
+.h2-headline {
+	font-size: 2.5em;
+	color: #FFFFFF; /* White */
+	letter-spacing: 0.5em;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+/* NEON Wallet, Internal Documentation, NEOScan etc. */
+.h3-headline {
+	font-size: 1.125em;
+	color: #FFFFFF; /* White */
+	letter-spacing: 0.5em;
+	font-weight: 700;
+	margin-bottom: 4px;
+}
+
+/* Welcome, we are */
+p.welcome {
+	font-size: 1.063em;
+	color: #E6ECF2; /* Eggshell blue */
+	font-weight: 500; /* Regular */
+}
+
+
+
+/*************************
+
+TEXT STYLES - BODY COPY
+
+*************************/
+
+p.small {
+	font-size: 0.75em;
+	color: #E6ECF2; /* Eggshell blue */
+	font-weight: 400; /* Regular */
+}
+
+p.normal {
+	font-size: 0.938em;
+	color: #E6ECF2; /* Eggshell blue */
+	line-height: 1.5em;
+	font-weight: 400; /* Regular */
+}
+
+p.large {
+	font-size: 1.250em;
+	color: #E6ECF2; /* Eggshell blue */
+	line-height: 2em;
+	font-weight: 400; /* Regular */
+}
+
+p.large-bold {
+	font-size: 1.250em;
+	color: #E6ECF2; /* Eggshell blue */
+	line-height: 2em;
+	font-weight: 600; /* Semi-bold */
+}
+
+p.large-number {
+	font-size: 5.625em;
+	color: #FFFFFF; /* White */
+	font-weight: 500; /* Medium */
+}
+
+
+/*************************
+
+TEXT STYLES - TOP RIGHT NAVIGATION
+
+*************************/
+
+a.navigation-link {
+	font-size: 0.75em;
+	color: #B6BDC4;
+}
+
+a.navigation-link:hover {
+	color: #FFFFFF;
+}
+
+a.navigation-link:visited {
+	color: #B6BDC4;
+}
+
+a.navigation-link .active {
+	font-weight: 700;
+	color: #ffffff;
+}
+
+
+
+/*************************
+
+TEXT STYLES - LINKS
+
+*************************/
+
+a.normal-link {
+	font-size: 0.938em;
+}
+
+a.small-link {
+	font-size: 0.75em;
+}
+
+a.normal-link, .small-link {
+	color: #4598FF; /* Brilliant Azure */
+	font-weight: 400; /* Regular */
+	text-decoration: underline;
+	-webkit-transition: 0.2s ease-in-out all;
+	transition: 0.25s ease-in-out all;
+}
+
+a.normal-link, .small-link:hover {
+	color: #68ABFF; /* French Sky Blue */
+}
+
+a.normal-link .small-link:visited {
+	color: #4598FF; /* Brilliant Azure */
+}
+
+
+
+/*************************
+
+TEXT STYLES - LINKS
+
+*************************/
+
+
+
