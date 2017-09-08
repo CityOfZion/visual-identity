@@ -1,0 +1,24 @@
+.projectList {
+  margin-bottom: 80px;
+}
+
+.projectList h2 {
+  font-family: orbitron, sans-serif;
+  text-transform: uppercase;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.projectList .target {
+  color: #4598FF;
+}
+
+.projectList .thumbnail {
+  display: inline-block;
+  padding: 0 0 3px;
+  position: relative;
+  background-image: linear-gradient(to right, #2A43C1, #4598FF);
+  max-width: 100%;
+  height: auto;
+}
+

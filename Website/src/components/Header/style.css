@@ -1,0 +1,51 @@
+.header {
+	width: 100%;
+	padding: 0;
+	z-index: 50;
+	margin-top: 40px;
+}
+
+.header nav {
+	float: right;
+}
+
+.header nav a {
+	display: inline-block;
+	padding: 0 0 5px;
+	margin: 0 20px;
+	min-width: 50px;
+	text-align: center;
+	text-decoration: none;
+	color: #FFF;
+	position: relative;
+  font-family: orbitron, sans-serif;
+  text-transform: uppercase;
+  opacity: 0.7;
+  font-size: 12px;
+}
+
+.header nav a:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0px;
+  right: 0px;
+  height: 3px;
+}
+
+.header nav a:hover,
+.header nav a:active,
+.header nav a.active {
+  opacity: 1;
+}
+
+.header nav a:active:after,
+.header nav a.active:after {
+	background-image: linear-gradient(to right, #2A43C1, #4598FF);
+}
+
+.header .logo {
+	width: 242px;
+	height: 36px;
+	display: inline-block;
+}

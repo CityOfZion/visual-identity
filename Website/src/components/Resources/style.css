@@ -1,0 +1,59 @@
+.resources {
+  position: relative;
+}
+
+.resources .accent {
+  background-image: linear-gradient(to right, #4598FF, #2A43C1);
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 50px;
+  z-index: 2;
+}
+
+.resources .wrapper {
+  padding: 50px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.resources .wrapper:after {
+  content: "";
+  width: 0;
+  height: 0;
+  margin-left: -50px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border: 25px solid #333372;
+  border-right: 25px solid transparent;
+  border-top: 25px solid transparent;
+}
+
+.resources .wrapper:before {
+  content: "";
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 50px;
+  background: #333372;
+}
+
+.resources .container {
+  background: #333372;
+  padding: 0 0 80px;
+}
+
+.resources .subtitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 40px;
+}
+
+@media screen and (min-width: 450px) {
+  .resources .subtitle {
+    max-width: 85%;
+  }
+}
