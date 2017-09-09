@@ -5,6 +5,7 @@
 
 .header nav {
 	float: right;
+  margin-top: 7px;
 }
 
 .header nav a {
