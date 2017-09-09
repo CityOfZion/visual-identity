@@ -57,3 +57,16 @@
     max-width: 85%;
   }
 }
+
+.resources hr {
+  height: 4px;
+  width: 225px;
+  float: left;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  margin-left:0
+}
+
+.resources .socialList {
+
+}

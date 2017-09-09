@@ -1,28 +1,43 @@
 import { h, Component } from 'preact';
-import { Link } from 'preact-router/match';
+import Scroll from 'react-scroll';
+
+const Link = Scroll.Link;
 
 import ContentWrapper from '../ContentWrapper';
 import Logo from '../Logo';
 
-import style from './style';
+import css from './style';
 
-export default class Header extends Component {
-	render() {
-		return (
-			<header class={ style.header }>
-				<ContentWrapper>
-					<div class={ style.logo }>
-						<Logo />
-					</div>
+const Header = ( props ) => {
+	const { style } = props;
 
-					<nav>
-						<Link activeClassName={style.active} href="/">Welcome</Link>
-						<Link activeClassName={style.active} href="/profile">Projects</Link>
-						<Link activeClassName={style.active} href="/profile/john">Governance</Link>
-						<Link activeClassName={style.active} href="/profile/john">Resources</Link>
-					</nav>
-					</ContentWrapper>
-			</header>
-		);
-	}
+	return (
+		<header class={ css.header } style={ style }>
+			<ContentWrapper>
+				<div class={ css.logo }>
+					<Logo />
+				</div>
+
+				<nav>
+					<Link activeClass={ css.active } to="welcome" spy={true} smooth={true} offset={-130} duration={500}>
+            Welcome
+          </Link>
+
+          <Link activeClass={ css.active } to="projects" spy={true} smooth={true} offset={-130} duration={500}>
+            Projects
+          </Link>
+
+          <Link activeClass={ css.active } to="governance" spy={true} smooth={true} offset={-130} duration={500}>
+            Governance
+          </Link>
+
+          <Link activeClass={ css.active } to="resources" spy={true} smooth={true} offset={-130} duration={500}>
+            Resources
+          </Link>
+				</nav>
+			</ContentWrapper>
+		</header>
+	);
 }
+
+export default Header;

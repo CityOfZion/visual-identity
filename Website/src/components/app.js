@@ -1,5 +1,6 @@
 import { h, Component } from 'preact';
 import { Router } from 'preact-router';
+import { StickyContainer, Sticky } from 'react-sticky';
 
 import Footer from './Footer';
 import Header from './Header';
@@ -136,13 +137,18 @@ export default class App extends Component {
   render() {
     return (
       <div id="app">
-        <Header />
-        <Router onChange={this.handleRoute}>
-          <Home path="/" content={ this.data.content } />
-          <Profile path="/profile/" user="me" />
-          <Profile path="/profile/:user" />
-        </Router>
-        <Footer copyright={ this.data.page.copyright } />
+        <StickyContainer>
+          <Sticky>
+            { ({ style }) => <Header style={style} /> }
+          </Sticky>
+
+          <Router onChange={this.handleRoute}>
+            <Home path="/" content={ this.data.content } />
+            <Profile path="/profile/" user="me" />
+            <Profile path="/profile/:user" />
+          </Router>
+          <Footer copyright={ this.data.page.copyright } />
+        </StickyContainer>
       </div>
     );
   }

@@ -1,6 +1,6 @@
 {
-  "name": "Preact PWA",
-  "short_name": "Preact PWA",
+  "name": "COZ:City of Zion",
+  "short_name": "City of Zion",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",

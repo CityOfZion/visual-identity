@@ -22,7 +22,6 @@
 
 .home .subHeadingCOZ {
   font-size: 17px;
-  margin: 180px 0 0;
 }
 
 .home .tagline {
@@ -69,4 +68,8 @@
 .home .governanceSubtitle {
   text-align: center;
   margin-bottom: 120px;
+}
+
+.home .welcomeBox {
+  padding-top: 180px;
 }
