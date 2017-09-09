@@ -49,4 +49,5 @@ a, a:link {
   box-shadow: inset 0px 0px 100px rgba(25, 24, 49, 0.1);
   background: #212146 url('/assets/images/page-bg.jpg') top center no-repeat;
   background-size: cover;
+  padding-top: 20px;
 }

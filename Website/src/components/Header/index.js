@@ -9,33 +9,35 @@ import Logo from '../Logo';
 import css from './style';
 
 const Header = ( props ) => {
-	const { style } = props;
+	const { isSticky, style } = props;
 
 	return (
 		<header class={ css.header } style={ style }>
-			<ContentWrapper>
-				<div class={ css.logo }>
-					<Logo />
-				</div>
+			<div class={ isSticky ? css.headerWrapperVisible : css.headerWrapper }>
+				<ContentWrapper>
+					<div class={ css.logo }>
+						<Logo />
+					</div>
 
-				<nav>
-					<Link activeClass={ css.active } to="welcome" spy={true} smooth={true} offset={-130} duration={500}>
-            Welcome
-          </Link>
+					<nav>
+						<Link activeClass={ css.active } to="welcome" spy={true} smooth={true} offset={-130} duration={500}>
+	            Welcome
+	          </Link>
 
-          <Link activeClass={ css.active } to="projects" spy={true} smooth={true} offset={-130} duration={500}>
-            Projects
-          </Link>
+	          <Link activeClass={ css.active } to="projects" spy={true} smooth={true} offset={-130} duration={500}>
+	            Projects
+	          </Link>
 
-          <Link activeClass={ css.active } to="governance" spy={true} smooth={true} offset={-130} duration={500}>
-            Governance
-          </Link>
+	          <Link activeClass={ css.active } to="governance" spy={true} smooth={true} offset={-130} duration={500}>
+	            Governance
+	          </Link>
 
-          <Link activeClass={ css.active } to="resources" spy={true} smooth={true} offset={-130} duration={500}>
-            Resources
-          </Link>
-				</nav>
-			</ContentWrapper>
+	          <Link activeClass={ css.active } to="resources" spy={true} smooth={true} offset={-130} duration={500}>
+	            Resources
+	          </Link>
+					</nav>
+				</ContentWrapper>
+			</div>
 		</header>
 	);
 }

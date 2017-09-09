@@ -50,7 +50,7 @@
   max-width: 600px;
   font-weight: bold;
   font-size: 20px;
-  margin: 20px 0 180px;
+  margin: 20px 0;
 }
 
 .home .subtitle {
@@ -71,5 +71,5 @@
 }
 
 .home .welcomeBox {
-  padding-top: 180px;
+  padding: 180px 0;
 }

@@ -5,9 +5,7 @@ import { StickyContainer, Sticky } from 'react-sticky';
 import Footer from './Footer';
 import Header from './Header';
 import Home from '../routes/home';
-import Profile from '../routes/profile';
 // import Home from 'async!./home';
-// import Profile from 'async!./profile';
 
 export default class App extends Component {
   constructor(props) {
@@ -139,14 +137,15 @@ export default class App extends Component {
       <div id="app">
         <StickyContainer>
           <Sticky>
-            { ({ style }) => <Header style={style} /> }
+            { ({ isSticky, style }) => (
+              <Header style={ style } isSticky={ isSticky }/>
+            ) }
           </Sticky>
 
-          <Router onChange={this.handleRoute}>
+          <Router onChange={ this.handleRoute }>
             <Home path="/" content={ this.data.content } />
-            <Profile path="/profile/" user="me" />
-            <Profile path="/profile/:user" />
           </Router>
+
           <Footer copyright={ this.data.page.copyright } />
         </StickyContainer>
       </div>

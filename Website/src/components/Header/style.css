@@ -1,6 +1,5 @@
 .header {
 	width: 100%;
-  padding: 40px 0 0;
 	z-index: 100;
 }
 
@@ -48,4 +47,14 @@
 	width: 242px;
 	height: 36px;
 	display: inline-block;
+}
+
+.header .headerWrapper,
+.header .headerWrapperVisible {
+  transition: background-color 0.5s ease;
+  padding: 20px 0 15px;
+}
+
+.header .headerWrapperVisible {
+  background-color: #2B2B5E;
 }
