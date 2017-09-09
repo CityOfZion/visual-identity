@@ -26,6 +26,7 @@
     "preact": "^8.2.1",
     "preact-compat": "^3.17.0",
     "preact-router": "^2.5.7",
+    "react-burger-menu": "^2.1.6",
     "react-scroll": "^1.5.4",
     "react-sticky": "^6.0.1"
   }

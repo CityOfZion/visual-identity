@@ -26,7 +26,6 @@ export default class Home extends Component {
 
     return (
       <div class={ style.home }>
-
           <section>
             <Element name="welcome" class={ style.welcomeBox }>
               <ContentWrapper narrow>
@@ -44,11 +43,6 @@ export default class Home extends Component {
                 <p class={ style.heroContent }>We are an independent group of open source developers, designers and translators formed to support the NEO BlockChain core and ecosystem.</p>
               </ContentWrapper>
             </Element>
-          </section>
-
-          <section>
-
-
           </section>
 
           <section>

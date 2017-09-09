@@ -9,7 +9,7 @@ import Logo from '../Logo';
 import css from './style';
 
 const Header = ( props ) => {
-	const { isSticky, style } = props;
+	const { isSticky, links, style } = props;
 
 	return (
 		<header class={ css.header } style={ style }>
@@ -20,21 +20,7 @@ const Header = ( props ) => {
 					</div>
 
 					<nav>
-						<Link activeClass={ css.active } to="welcome" spy={true} smooth={true} offset={-130} duration={500}>
-	            Welcome
-	          </Link>
-
-	          <Link activeClass={ css.active } to="projects" spy={true} smooth={true} offset={-130} duration={500}>
-	            Projects
-	          </Link>
-
-	          <Link activeClass={ css.active } to="governance" spy={true} smooth={true} offset={-130} duration={500}>
-	            Governance
-	          </Link>
-
-	          <Link activeClass={ css.active } to="resources" spy={true} smooth={true} offset={-130} duration={500}>
-	            Resources
-	          </Link>
+						{ links }
 					</nav>
 				</ContentWrapper>
 			</div>

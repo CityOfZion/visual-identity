@@ -1,10 +1,10 @@
 import { h, Component } from 'preact';
 import { Router } from 'preact-router';
-import { StickyContainer, Sticky } from 'react-sticky';
+import { StickyContainer } from 'react-sticky';
 
 import Footer from './Footer';
-import Header from './Header';
 import Home from '../routes/home';
+import PageMenu from './PageMenu';
 // import Home from 'async!./home';
 
 export default class App extends Component {
@@ -136,11 +136,7 @@ export default class App extends Component {
     return (
       <div id="app">
         <StickyContainer>
-          <Sticky>
-            { ({ isSticky, style }) => (
-              <Header style={ style } isSticky={ isSticky }/>
-            ) }
-          </Sticky>
+          <PageMenu />
 
           <Router onChange={ this.handleRoute }>
             <Home path="/" content={ this.data.content } />
