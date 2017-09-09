@@ -26,7 +26,7 @@
   position: absolute;
   top: 0;
   left: 100%;
-  border: 25px solid #333372;
+  border: 25px solid #2B2B5E;
   border-right: 25px solid transparent;
   border-top: 25px solid transparent;
 }
@@ -38,12 +38,12 @@
   position: absolute;
   top: 0;
   right: 50px;
-  background: #333372;
+  background: #2B2B5E;
 }
 
 .resources .container {
-  background: #333372;
   padding: 0 0 80px;
+  background: #2B2B5E url('/assets/images/resources-bg.png') bottom right no-repeat;
 }
 
 .resources .subtitle {
@@ -61,12 +61,64 @@
 .resources hr {
   height: 4px;
   width: 225px;
-  float: left;
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
-  margin-left:0
+  margin: 50px 0;
 }
 
 .resources .socialList {
+  font-family: orbitron, sans-serif;
+}
 
+.resources .socialList h2,
+.resources .socialList p {
+  margin: 0;
+}
+.resources .socialList h2 {
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+.resources .socialList p {
+  font-size: 12px;
+}
+
+.resources .socialList a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.resources .socialList .itemContent {
+  overflow: hidden;
+  padding-top: 26px;
+}
+
+.resources .socialList img {
+  float: left;
+  margin-right: 10px;
+}
+
+.resources .license,
+.resources .pullRequest,
+.resources .testNet {
+  margin: 0;
+}
+
+.resources .license,
+.resources .pullRequest {
+  font-size: 20px;
+}
+
+.resources .license {
+  font-weight: bold;
+}
+
+.resources .pullRequest {
+  margin-bottom: 20px;
+}
+
+.resources .testNet {
+  font-size: 13px;
+  font-style: italic;
+  max-width: 85%;
 }

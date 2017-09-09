@@ -96,3 +96,8 @@
   max-width: 100%;
   height: auto;
 }
+
+.governanceList .secondary {
+  font-size: 14px;
+  word-wrap: break-word;
+}

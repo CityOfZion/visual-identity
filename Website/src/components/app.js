@@ -24,7 +24,7 @@ export default class App extends Component {
             target: "http://www.neonwallet.com/",
             thumbnail: {
               alt: "Neon Wallet",
-              src: "http://via.placeholder.com/350x200"
+              src: "/assets/images/neon-wallet.jpg"
             }
           },
           {
@@ -34,7 +34,7 @@ export default class App extends Component {
             target: "https://github.com/CityOfZion/docs",
             thumbnail: {
               alt: "Internal Documentation",
-              src: "http://via.placeholder.com/350x200"
+              src: "/assets/images/internal-docs.jpg"
             }
           },
           {
@@ -44,7 +44,7 @@ export default class App extends Component {
             target: "https://github.com/CityOfZion/neo-scan",
             thumbnail: {
               alt: "NEOScan",
-              src: "http://via.placeholder.com/350x200"
+              src: "/assets/images/neo-scan.jpg"
             }
           },
           {
@@ -54,7 +54,7 @@ export default class App extends Component {
             target: "#securityReview",
             thumbnail: {
               alt: "Security Review",
-              src: "http://via.placeholder.com/350x200"
+              src: "/assets/images/security-review.jpg"
             }
           },
           {
@@ -64,7 +64,7 @@ export default class App extends Component {
             target: "https://github.com/CityOfZion/neo-slack-bot",
             thumbnail: {
               alt: "Neo Portal",
-              src: "http://via.placeholder.com/350x200"
+              src: "/assets/images/neo-portal.jpg"
             }
           },
           {
@@ -74,13 +74,13 @@ export default class App extends Component {
             target: "https://trello.com/b/6TngvuLf/neoblockchaindevelopment",
             thumbnail: {
               alt: "More to come",
-              src: "http://via.placeholder.com/350x200"
+              src: "/assets/images/more-to-come.jpg"
             }
           },
         ],
         governanceList: [
           {
-            description: "There will be a council always composed of 9 members. They are th eCOuncil team in our organization."
+            description: "There will be a council always composed of 9 members. They are the Council team in our organization."
           },
           {
             description: "There will be a high council composed of 4 members of the council. They are the Maintainers of the Council team."
@@ -95,7 +95,7 @@ export default class App extends Component {
             description: "In case of any support from NEO as reward or bounty, the funds will initially be held by a trusted third party in a wallet for distribution.",
             secondary: {
               heading: "Wallet Address",
-              content: "xxx"
+              content: "AXSoNQEKjmqPBNPg5cNrHyWivfjok3Vj9D"
             },
           },
           {

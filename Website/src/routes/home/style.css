@@ -32,6 +32,7 @@
   background-image: linear-gradient(to right, #2A43C1, #4598FF);
   overflow:hidden;
   position:relative;
+  text-shadow: 1px 1px #2f53cd;
 }
 
 .home .taglineContent {

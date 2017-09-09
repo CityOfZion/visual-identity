@@ -70,7 +70,7 @@ export default class Home extends Component {
 
                 <GovernanceList list={ governanceList } />
 
-                <p class={ style.governanceSubtitle }>Our most up to date governance can be found <a href="">here</a></p>
+                <p class={ style.governanceSubtitle }>Our most up to date governance can be found <a href="https://github.com/CityOfZion/governance">here</a></p>
               </ContentWrapper>
             </Element>
           </section>

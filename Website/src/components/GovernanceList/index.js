@@ -11,7 +11,7 @@ const GovernanceList = ( props ) => {
     const Secondary = () => {
       if (item.secondary) {
         return (
-          <div>
+          <div class={ style.secondary }>
             <h3>{ item.secondary.heading }</h3>
             <p>{ item.secondary.content }</p>
           </div>
