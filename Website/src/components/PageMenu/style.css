@@ -27,4 +27,5 @@
 .pageMenu a:active:after,
 .pageMenu .active:after {
   background-image: linear-gradient(to right, #2A43C1, #4598FF);
+  box-shadow: 0 2px 4px #13132F;
 }

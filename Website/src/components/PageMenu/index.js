@@ -10,14 +10,8 @@ import style from './style';
 
 const PageMenu = ( props ) => {
   const {
+    links
   } = props;
-
-  const links = [
-    { name: 'Welcome', target: 'welcome' },
-    { name: 'Projects', target: 'projects' },
-    { name: 'Governance', target: 'governance' },
-    { name: 'Resources', target: 'resources' },
-  ]
 
   const menuLinks = links.map((link) =>
     <Link
@@ -49,5 +43,9 @@ const PageMenu = ( props ) => {
     </div>
   )
 };
+
+PageMenu.defaultProps = {
+  links: [],
+}
 
 export default PageMenu;

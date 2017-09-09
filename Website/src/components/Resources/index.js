@@ -8,15 +8,10 @@ import style from './style';
 
 const Resources = ( props ) => {
   const {
+    socialList
   } = props;
 
-  const list = [
-    { name: 'Reddit', heading: 'Subscribe', subtitle: 'to NEO Reddit', target: 'https://www.reddit.com/r/NEO/', logo: '/assets/images/reddit.png' },
-    { name: 'Slack', heading: 'Join', subtitle: 'our Slack Channel', target: 'https://join.slack.com/t/neosmarteconomy/shared_invite/MjI5MTc0NTIwMDM2LTE1MDMyNDY3MDctYzQ2MzM4ZjU3ZA', logo: '/assets/images/slack.png' },
-    { name: 'Github', heading: 'Fork', subtitle: 'our Github Repository', target: 'https://github.com/CityOfZion', logo: '/assets/images/github.png' },
-  ];
-
-  const listItems = list.map((item) =>
+  const listItems = socialList.map((item) =>
     <div class={ style.socialList }>
       <a href={ item.target }>
         <img
@@ -55,5 +50,9 @@ const Resources = ( props ) => {
     </div>
   )
 };
+
+Resources.defaultProps = {
+  socialList: [],
+}
 
 export default Resources;

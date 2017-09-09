@@ -14,7 +14,7 @@
   letter-spacing: 16px;
 }
 
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 922px) {
   .home .headingCOZ {
     font-size: 64px;
   }
@@ -45,6 +45,7 @@
 
 .home .taglineWrapper {
   overflow: hidden;
+  padding-right: 12px;
 }
 
 .home .heroContent {
@@ -60,7 +61,7 @@
   margin: 0 0 40px;
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 768px) {
   .home .subtitle {
     max-width: 85%;
   }

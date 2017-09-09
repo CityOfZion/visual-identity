@@ -22,7 +22,11 @@ export default class Home extends Component {
   }
 
   render() {
-    const { governanceList, projectList } = this.props.content;
+    const {
+      governanceList,
+      projectList,
+      resources
+    } = this.props.content;
 
     return (
       <div class={ style.home }>
@@ -72,7 +76,7 @@ export default class Home extends Component {
           <section>
             <Element name="resources">
               <ContentWrapper>
-                <Resources />
+                <Resources socialList={ resources.socialList } />
               </ContentWrapper>
             </Element>
           </section>

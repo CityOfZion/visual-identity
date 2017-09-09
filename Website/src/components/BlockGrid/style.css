@@ -15,9 +15,10 @@
   float: left;
   clear: none;
   width: 100%;
+  margin-bottom: 30px;
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 768px) {
   .blockGrid .itemThird {
     display: inline-block;
     width: 49.25%;
@@ -37,7 +38,7 @@
   }
 }
 
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 922px) {
   .blockGrid .itemThird {
     width: 33.333333%;
   }

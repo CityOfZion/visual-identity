@@ -15,6 +15,14 @@ export default class App extends Component {
       page: {
         copyright: "© Copyright City of Zion, 2017"
       },
+      pageMenu: {
+        links: [
+          { name: 'Welcome', target: 'welcome' },
+          { name: 'Projects', target: 'projects' },
+          { name: 'Governance', target: 'governance' },
+          { name: 'Resources', target: 'resources' },
+        ]
+      },
       content: {
         projectList: [
           {
@@ -120,6 +128,13 @@ export default class App extends Component {
             description: "Any member of the council that does not vote on polls for more than 2 months will automatically forfeit their position."
           },
         ],
+        resources: {
+          socialList: [
+            { name: 'Reddit', heading: 'Subscribe', subtitle: 'to NEO Reddit', target: 'https://www.reddit.com/r/NEO/', logo: '/assets/images/reddit.png' },
+            { name: 'Slack', heading: 'Join', subtitle: 'our Slack Channel', target: 'https://join.slack.com/t/neosmarteconomy/shared_invite/MjI5MTc0NTIwMDM2LTE1MDMyNDY3MDctYzQ2MzM4ZjU3ZA', logo: '/assets/images/slack.png' },
+            { name: 'Github', heading: 'Fork', subtitle: 'our Github Repository', target: 'https://github.com/CityOfZion', logo: '/assets/images/github.png' },
+          ]
+        }
       }
     };
   }
@@ -136,7 +151,7 @@ export default class App extends Component {
     return (
       <div id="app">
         <StickyContainer>
-          <PageMenu />
+          <PageMenu links={ this.data.pageMenu.links } />
 
           <Router onChange={ this.handleRoute }>
             <Home path="/" content={ this.data.content } />

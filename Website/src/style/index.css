@@ -52,7 +52,7 @@ a, a:link {
   padding-top: 20px;
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 768px) {
   .title h1 {
     font-size: 35px;
   }
@@ -91,6 +91,7 @@ a, a:link {
   padding: 100px 20px 0;
   font-size: 1.15em;
   margin-top: -120px;
+  text-align: right;
 }
 
 /* Wrapper for item list */
@@ -99,9 +100,9 @@ a, a:link {
 }
 
 .bm-item-list a {
-  text-align: right;
   margin: 70px 35px;
   font-size: 16px;
+  display: inline-block !important;
 }
 
 /* Styling of overlay */
