@@ -1,0 +1,45 @@
+.form-control {
+  color: $body-text-white;
+  border: none;
+  border-radius: 3px;
+  box-shadow: none;
+  background-color: $coz-dark;
+  &:focus {
+    box-shadow: none;
+  }
+  &[disabled], &[readonly] {
+    background-color: darken($coz-dark, 10%);
+    opacity: .8;
+  }
+}
+fieldset[disabled] .form-control {
+  background-color: darken($coz-dark, 10%);
+  opacity: 1.8
+}
+.help-block {
+  color: $body-text-white;
+  font-size: 13px;
+  &.help-block-primary {
+    color: $coz-primary;
+  }
+  &.help-block-info {
+    color: $info-blue;
+  }
+  &.help-block-success {
+    color: $success-green;
+  }
+  &.help-block-warning {
+    color: $warning-orange;
+  }
+  &.help-block-danger {
+    color: $danger-red;
+  }
+}
+
+.form-group-outline {
+  .form-control {
+    background-color: transparent;
+    border: 1px solid lighten($coz-dark, 15%);
+  }  
+}
+

@@ -1,0 +1,422 @@
+// Margin helper generate mixin
+$sides: (top, right, bottom, left);
+@each $side in $sides {
+  $i: 0;
+  @while $i < 100 {
+    $i: $i + 5;
+    .margin-#{$side}-#{$i} {
+      margin-#{$side}: #{$i}px;
+    }
+  }
+}
+
+.no-margin-top {
+  margin-top: 0;
+}
+
+.no-margin-right {
+  margin-right: 0;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.no-margin-left {
+  margin-left: 0;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+// Padding helper generate mixin
+$sides: (top, right, bottom, left);
+@each $side in $sides {
+  $i: 0;
+  @while $i < 100 {
+    $i: $i + 5;
+    .padding-#{$side}-#{$i} {
+      padding-#{$side}: #{$i}px;
+    }
+  }
+}
+
+.no-padding-top {
+  padding-top: 0;
+}
+
+.no-padding-right {
+  padding-right: 0;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0;
+}
+
+.no-padding-left {
+  padding-left: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-transitions {
+  transition: none;
+}
+
+.no-shadows {
+  box-shadow: none;
+}
+
+.no-shadows-hover {
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    box-shadow: none;
+  }
+}
+
+.no-border-radius {
+  border-radius: 0;
+}
+
+.btn-default.btn-gradient {
+  &.gradient-top {
+    background-image: linear-gradient(180deg, $darker-grey 0%, $grey 51%, $grey-dark 100%);
+  }
+  &.gradient-diagonally-top {
+    background-image: linear-gradient(-135deg, $darker-grey 0%, $grey 51%, $grey-dark 100%);
+  }
+  &.gradient-diagonally-bottom {
+    background-image: linear-gradient(135deg, $darker-grey 0%, $grey 51%, $grey-dark 100%);
+  }
+  &.gradient-bottom {
+    background-image: linear-gradient(0deg, $darker-grey 0%, $grey 51%, $grey-dark 100%);
+  }
+}
+
+.btn-primary.btn-gradient {
+  &.gradient-top {
+    background-image: linear-gradient(180deg, $coz-blue 0%, $coz-primary 51%, $coz-primary-dark 100%);
+  }
+  &.gradient-diagonally-top {
+    background-image: linear-gradient(-135deg, $coz-blue 0%, $coz-primary 51%, $coz-primary-dark 100%);
+  }
+  &.gradient-diagonally-bottom {
+    background-image: linear-gradient(135deg, $coz-blue 0%, $coz-primary 51%, $coz-primary-dark 100%);
+  }
+  &.gradient-bottom {
+    background-image: linear-gradient(0deg, $coz-blue 0%, $coz-primary 51%, $coz-primary-dark 100%);
+  }
+}
+
+.btn-info.btn-gradient {
+  &.gradient-top {
+    background-image: linear-gradient(180deg, darken($info-blue, 10%) 0%, $info-blue 51%, darken($info-blue, 10%) 100%);
+  }
+  &.gradient-diagonally-top {
+    background-image: linear-gradient(-135deg, darken($info-blue, 10%) 0%, $info-blue 51%, darken($info-blue, 10%) 100%);
+  }
+  &.gradient-diagonally-bottom {
+    background-image: linear-gradient(135deg, darken($info-blue, 10%) 0%, $info-blue 51%, darken($info-blue, 10%) 100%);
+  }
+  &.gradient-bottom {
+    background-image: linear-gradient(0deg, darken($info-blue, 10%) 0%, $info-blue 51%, darken($info-blue, 10%) 100%);
+  }
+}
+
+.btn-success.btn-gradient {
+  &.gradient-top {
+    background-image: linear-gradient(180deg, darken($success-green, 10%) 0%, $success-green 51%, darken($success-green, 10%) 100%);
+  }
+  &.gradient-diagonally-top {
+    background-image: linear-gradient(-135deg, darken($success-green, 10%) 0%, $success-green 51%, darken($success-green, 10%) 100%);
+  }
+  &.gradient-diagonally-bottom {
+    background-image: linear-gradient(135deg, darken($success-green, 10%) 0%, $success-green 51%, darken($success-green, 10%) 100%);
+  }
+  &.gradient-bottom {
+    background-image: linear-gradient(0deg, darken($success-green, 10%) 0%, $success-green 51%, darken($success-green, 10%) 100%);
+  }
+}
+
+.btn-warning.btn-gradient {
+  &.gradient-top {
+    background-image: linear-gradient(180deg, darken($warning-orange, 10%) 0%, $warning-orange 51%, darken($warning-orange, 10%) 100%);
+  }
+  &.gradient-diagonally-top {
+    background-image: linear-gradient(-135deg, darken($warning-orange, 10%) 0%, $warning-orange 51%, darken($warning-orange, 10%) 100%);
+  }
+  &.gradient-diagonally-bottom {
+    background-image: linear-gradient(135deg, darken($warning-orange, 10%) 0%, $warning-orange 51%, darken($warning-orange, 10%) 100%);
+  }
+  &.gradient-bottom {
+    background-image: linear-gradient(0deg, darken($warning-orange, 10%) 0%, $warning-orange 51%, darken($warning-orange, 10%) 100%);
+  }
+}
+
+.btn-danger.btn-gradient {
+  &.gradient-top {
+    background-image: linear-gradient(180deg, darken($danger-red, 10%) 0%, $danger-red 51%, darken($danger-red, 10%) 100%);
+  }
+  &.gradient-diagonally-top {
+    background-image: linear-gradient(-135deg, darken($danger-red, 10%) 0%, $danger-red 51%, darken($danger-red, 10%) 100%);
+  }
+  &.gradient-diagonally-bottom {
+    background-image: linear-gradient(135deg, darken($danger-red, 10%) 0%, $danger-red 51%, darken($danger-red, 10%) 100%);
+  }
+  &.gradient-bottom {
+    background-image: linear-gradient(0deg, darken($danger-red, 10%) 0%, $danger-red 51%, darken($danger-red, 10%) 100%);
+  }
+}
+
+.hover-default {
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    color: $darker-grey;
+  }
+}
+
+.hover-primary {
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    color: $coz-primary;
+  }
+}
+
+.hover-info {
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    color: $info-blue;
+  }
+}
+
+.hover-success {
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    color: $success-green;
+  }
+}
+
+.hover-warning {
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    color: $warning-orange;
+  }
+}
+
+.hover-danger {
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    color: $danger-red;
+  }
+}
+
+// Font-weight helper generate mixin, cause I'm lazy..
+$i: 0;
+@while $i < 800 {
+  $i: $i + 100;
+  .font-weight-#{$i} {
+    font-weight: #{$i};
+  }
+}
+
+.color-white {
+  color: #fff;
+}
+
+.color-default {
+  color: $darker-grey;
+}
+
+.color-primary {
+  color: $coz-primary;
+}
+
+.color-info {
+  color: $info-blue;
+}
+
+.color-success {
+  color: $success-green;
+}
+
+.color-warning {
+  color: $warning-orange;
+}
+
+.color-danger {
+  color: $danger-red;
+}
+
+.shadow-1 {
+  @include box_shadow(1);
+}
+
+.shadow-2 {
+  @include box_shadow(2);
+}
+
+.shadow-3 {
+  @include box_shadow(3);
+}
+
+.shadow-4 {
+  @include box_shadow(4);
+}
+
+.shadow-5 {
+  @include box_shadow(5);
+}
+
+.shadow-hover-1 {
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    @include box_shadow(1);
+  }
+}
+
+.shadow-hover-2 {
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    @include box_shadow(2);
+  }
+}
+
+.shadow-hover-3 {
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    @include box_shadow(3);
+  }
+}
+
+.shadow-hover-4 {
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    @include box_shadow(4);
+  }
+}
+
+.shadow-hover-5 {
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    @include box_shadow(5);
+  }
+}
+
+// Border-radius generate mixin
+$br: 0;
+@while $br < 100 {
+  $br: $br + 1;
+  .border-radius-#{$br} {
+    border-radius: #{$br}px;
+  }
+}
+
+// NEEDS VISUALS
+.icon-small {}
+
+.icon-large {
+  font-size: 32px;
+}
+
+.icon-xlarge {
+  font-size: 48px;
+}

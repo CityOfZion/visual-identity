@@ -1,0 +1,719 @@
+$body-font: 'Source Sans Pro',
+sans-serif;
+body {
+  background-color: $body-background-color;
+  font-family: $body-font;
+  color: $body-text-white;
+}
+a {
+  color: lighten($coz-primary, 20%);
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: #78b4ff;
+    outline: none;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small {
+  color: $font-heading-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+h1,
+.h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+h2,
+.h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+h3,
+.h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h4,
+.h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+h5,
+.h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+h6,
+.h6 {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small {
+  font-weight: 300;
+}
+
+h5 small,
+.h5 small {
+  font-size: 12px;
+}
+
+h6 small,
+.h6 small {
+  font-size: 11px;
+}
+
+p {
+  color: $body-text-white;
+}
+
+ul.list {
+  padding-left: 15px;
+  list-style: none;
+  li {
+    padding-left: 5px;
+    position: relative;
+    &:before {
+      content: "\f105";
+      position: absolute;
+      font-family: FontAwesome;
+      left: -15px;
+      font-size: 10px;
+      color: $body-text-white;
+      top: 3px;
+    }
+  }
+}
+
+.list.default-list {
+  li {
+    &:before {
+      color: $darker-grey;
+    }
+  }
+  &.list-info-icon {
+    li {
+      &:before {
+        content: "\f05a";
+      }
+    }
+  }
+  &.list-success-icon {
+    li {
+      &:before {
+        content: "\f00c";
+      }
+    }
+  }
+  &.list-warning-icon {
+    li {
+      &:before {
+        content: "\f071";
+      }
+    }
+  }
+  &.list-danger-icon {
+    li {
+      &:before {
+        content: "\f06a";
+      }
+    }
+  }
+}
+
+.list.primary-list {
+  li {
+    &:before {
+      color: $coz-primary;
+    }
+  }
+  &.list-info-icon {
+    li {
+      &:before {
+        content: "\f05a";
+      }
+    }
+  }
+  &.list-success-icon {
+    li {
+      &:before {
+        content: "\f00c";
+      }
+    }
+  }
+  &.list-warning-icon {
+    li {
+      &:before {
+        content: "\f071";
+      }
+    }
+  }
+  &.list-danger-icon {
+    li {
+      &:before {
+        content: "\f06a";
+      }
+    }
+  }
+}
+
+.list.info-list {
+  li {
+    &:before {
+      color: $info-blue;
+    }
+  }
+  &.list-info-icon {
+    li {
+      &:before {
+        content: "\f05a";
+      }
+    }
+  }
+  &.list-success-icon {
+    li {
+      &:before {
+        content: "\f00c";
+      }
+    }
+  }
+  &.list-warning-icon {
+    li {
+      &:before {
+        content: "\f071";
+      }
+    }
+  }
+  &.list-danger-icon {
+    li {
+      &:before {
+        content: "\f06a";
+      }
+    }
+  }
+}
+
+.list.success-list {
+  li {
+    &:before {
+      color: $success-green;
+    }
+  }
+  &.list-info-icon {
+    li {
+      &:before {
+        content: "\f05a";
+      }
+    }
+  }
+  &.list-success-icon {
+    li {
+      &:before {
+        content: "\f00c";
+      }
+    }
+  }
+  &.list-warning-icon {
+    li {
+      &:before {
+        content: "\f071";
+      }
+    }
+  }
+  &.list-danger-icon {
+    li {
+      &:before {
+        content: "\f06a";
+      }
+    }
+  }
+}
+
+.list.warning-list {
+  li {
+    &:before {
+      color: $warning-orange;
+    }
+  }
+  &.list-info-icon {
+    li {
+      &:before {
+        content: "\f05a";
+      }
+    }
+  }
+  &.list-success-icon {
+    li {
+      &:before {
+        content: "\f00c";
+      }
+    }
+  }
+  &.list-warning-icon {
+    li {
+      &:before {
+        content: "\f071";
+      }
+    }
+  }
+  &.list-danger-icon {
+    li {
+      &:before {
+        content: "\f06a";
+      }
+    }
+  }
+}
+
+.list.danger-list {
+  li {
+    &:before {
+      color: $danger-red;
+    }
+  }
+  &.list-info-icon {
+    li {
+      &:before {
+        content: "\f05a";
+      }
+    }
+  }
+  &.list-success-icon {
+    li {
+      &:before {
+        content: "\f00c";
+      }
+    }
+  }
+  &.list-warning-icon {
+    li {
+      &:before {
+        content: "\f071";
+      }
+    }
+  }
+  &.list-danger-icon {
+    li {
+      &:before {
+        content: "\f06a";
+      }
+    }
+  }
+}
+
+ol {
+  padding-left: 15px;
+  li {
+    padding-left: 5px;
+  }
+}
+
+blockquote {
+  font-size: 15px;
+  color: $body-text-white;
+  border-left: 5px solid $darker-grey;
+  position: relative;
+}
+
+blockquote.blockquote-default {
+  border-left-color: $darker-grey;
+}
+
+blockquote.blockquote-primary {
+  border-left-color: $coz-primary;
+}
+
+blockquote.blockquote-info {
+  border-left-color: $info-blue;
+}
+
+blockquote.blockquote-success {
+  border-left-color: $success-green;
+}
+
+blockquote.blockquote-warning {
+  border-left-color: $warning-orange;
+}
+
+blockquote.blockquote-danger {
+  border-left-color: $danger-red;
+}
+
+blockquote.blockquote-default-gradient {
+  border-left: 0;
+  &:before {
+    content: "";
+    width: 5px;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    background-image: linear-gradient(0deg, $darker-grey 0%, $grey 100%);
+  }
+}
+
+blockquote.blockquote-primary-gradient {
+  border-left: 0;
+  &:before {
+    content: "";
+    width: 5px;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    background-image: linear-gradient(0deg, $coz-blue 0%, $coz-primary 100%);
+  }
+}
+
+blockquote.blockquote-info-gradient {
+  border-left: 0;
+  &:before {
+    content: "";
+    width: 5px;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    background-image: linear-gradient(0deg, darken($info-blue, 25%) 0%, $info-blue 100%);
+  }
+}
+
+blockquote.blockquote-success-gradient {
+  border-left: 0;
+  &:before {
+    content: "";
+    width: 5px;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    background-image: linear-gradient(0deg, darken($success-green, 20%) 0%, $success-green 100%);
+  }
+}
+
+blockquote.blockquote-warning-gradient {
+  border-left: 0;
+  &:before {
+    content: "";
+    width: 5px;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    background-image: linear-gradient(0deg, darken($warning-orange, 35%) 0%, $warning-orange 100%);
+  }
+}
+
+blockquote.blockquote-danger-gradient {
+  border-left: 0;
+  &:before {
+    content: "";
+    width: 5px;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    background-image: linear-gradient(0deg, darken($danger-red, 15%) 0%, $danger-red 100%);
+  }
+}
+
+dd {
+  margin-left: 0;
+  margin-bottom: 10px;
+}
+
+dl {
+  dt {
+    color: $font-heading-color;
+    &:before {
+      font-family: FontAwesome;
+      padding-right: 10px;
+      font-size: 13px;
+    }
+  }
+}
+
+.description-default {
+  dt {
+    color: $darker-grey;
+  }
+  dt {
+    &:before {
+      font-family: FontAwesome;
+      color: $darker-grey;
+    }
+  }
+  &.description-info-icon {
+    dt {
+      &:before {
+        content: "\f05a";
+      }
+    }
+  }
+  &.description-success-icon {
+    dt {
+      &:before {
+        content: "\f00c";
+      }
+    }
+  }
+  &.description-warning-icon {
+    dt {
+      &:before {
+        content: "\f071";
+      }
+    }
+  }
+  &.description-danger-icon {
+    dt {
+      &:before {
+        content: "\f06a";
+      }
+    }
+  }
+}
+
+.description-primary {
+  dt {
+    color: $coz-primary;
+  }
+  dt {
+    &:before {
+      font-family: FontAwesome;
+      color: $darker-grey;
+    }
+  }
+  &.description-info-icon {
+    dt {
+      &:before {
+        content: "\f05a";
+      }
+    }
+  }
+  &.description-success-icon {
+    dt {
+      &:before {
+        content: "\f00c";
+      }
+    }
+  }
+  &.description-warning-icon {
+    dt {
+      &:before {
+        content: "\f071";
+      }
+    }
+  }
+  &.description-danger-icon {
+    dt {
+      &:before {
+        content: "\f06a";
+      }
+    }
+  }
+}
+
+.description-info {
+  dt {
+    color: $info-blue;
+  }
+  dt {
+    &:before {
+      font-family: FontAwesome;
+    }
+  }
+  &.description-info-icon {
+    dt {
+      &:before {
+        content: "\f05a";
+      }
+    }
+  }
+  &.description-success-icon {
+    dt {
+      &:before {
+        content: "\f00c";
+      }
+    }
+  }
+  &.description-warning-icon {
+    dt {
+      &:before {
+        content: "\f071";
+      }
+    }
+  }
+  &.description-danger-icon {
+    dt {
+      &:before {
+        content: "\f06a";
+      }
+    }
+  }
+}
+
+.description-success {
+  dt {
+    color: $success-green;
+  }
+  dt {
+    &:before {
+      font-family: FontAwesome;
+    }
+  }
+  &.description-info-icon {
+    dt {
+      &:before {
+        content: "\f05a";
+      }
+    }
+  }
+  &.description-success-icon {
+    dt {
+      &:before {
+        content: "\f00c";
+      }
+    }
+  }
+  &.description-warning-icon {
+    dt {
+      &:before {
+        content: "\f071";
+      }
+    }
+  }
+  &.description-danger-icon {
+    dt {
+      &:before {
+        content: "\f06a";
+      }
+    }
+  }
+}
+
+.description-warning {
+  dt {
+    color: $warning-orange;
+  }
+  dt {
+    &:before {
+      font-family: FontAwesome;
+    }
+  }
+  &.description-info-icon {
+    dt {
+      &:before {
+        content: "\f05a";
+      }
+    }
+  }
+  &.description-success-icon {
+    dt {
+      &:before {
+        content: "\f00c";
+      }
+    }
+  }
+  &.description-warning-icon {
+    dt {
+      &:before {
+        content: "\f071";
+      }
+    }
+  }
+  &.description-danger-icon {
+    dt {
+      &:before {
+        content: "\f06a";
+      }
+    }
+  }
+}
+
+.description-danger {
+  dt {
+    color: $danger-red;
+  }
+  dt {
+    &:before {
+      font-family: FontAwesome;
+    }
+  }
+  &.description-info-icon {
+    dt {
+      &:before {
+        content: "\f05a";
+      }
+    }
+  }
+  &.description-success-icon {
+    dt {
+      &:before {
+        content: "\f00c";
+      }
+    }
+  }
+  &.description-warning-icon {
+    dt {
+      &:before {
+        content: "\f071";
+      }
+    }
+  }
+  &.description-danger-icon {
+    dt {
+      &:before {
+        content: "\f06a";
+      }
+    }
+  }
+}

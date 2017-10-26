@@ -1,0 +1,23 @@
+.breadcrumb {
+  background-color: transparent;
+  &>li+li:before {
+    color: rgba(255, 255, 255, 0.2);
+  }
+  li {
+    &.active {
+      color: $coz-blue;
+      font-weight: 600;
+    }
+    a {
+      color: $coz-blue;
+    }
+  }
+  &.dash-breadcrumb {
+    &>li+li:before {
+      content: " - ";
+    }
+  }
+  &.solid-breadcrumb {
+    background: $coz-dark-blue;
+  }
+}
