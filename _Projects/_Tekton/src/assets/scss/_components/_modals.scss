@@ -1,0 +1,35 @@
+.modal {
+  @include box_shadow(5);
+}
+
+.modal-content {
+  background-color: $coz-dark;
+  .modal-title {
+    font-size: 22px;
+  }
+  .modal-header {
+    border-color: lighten($coz-dark, 10%);
+    border-color: transparent;
+    background-color: darken($coz-dark, 2%);
+    padding: 40px 20px;
+    .close {
+      color: #ffffff;
+      text-shadow: none;
+      filter: alpha(opacity=20);
+      opacity: .2;
+    }
+  }
+  .modal-body {
+    padding: 40px;
+  }
+  .modal-footer {
+    border-color: lighten($coz-dark, 10%);
+    border-color: transparent;
+    background-color: darken($coz-dark, 2%);
+    padding: 20px;
+  }
+}
+
+.modal-backdrop.in {
+  opacity: .35;
+}

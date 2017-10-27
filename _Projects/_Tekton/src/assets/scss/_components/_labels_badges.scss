@@ -1,0 +1,25 @@
+.label {
+  border-radius: 3px;
+  font-weight: 600;
+  @include box_shadow(2);
+  user-select: none;
+  cursor: default;
+}
+.label-default {
+  background-color: $darker-grey;
+}
+.label-primary {
+  background-color: $coz-primary;
+}
+.label-info {
+  background-color: $info-blue;
+}
+.label-success {
+  background-color: $success-green;
+}
+.label-warning {
+  background-color: $warning-orange;
+}
+.label-danger {
+  background-color: $danger-red;
+}

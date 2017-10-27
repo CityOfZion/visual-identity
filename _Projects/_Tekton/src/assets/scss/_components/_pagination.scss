@@ -1,0 +1,109 @@
+.pagination {
+  border-radius: 3px;
+  > {
+    li {
+      > {
+        a,
+        span {
+          color: $body-text-white;
+          background-color: $coz-dark;
+          border-color: lighten($coz-dark, 10%);
+        }
+      }
+      &:first-child> {
+        a,
+        span {
+          border-bottom-left-radius: 3px;
+          border-top-left-radius: 3px;
+        }
+      }
+      &:last-child> {
+        a,
+        span {
+          border-bottom-right-radius: 3px;
+          border-top-right-radius: 3px;
+        }
+      }
+      > {
+        a:hover,
+        span:hover,
+        a:focus,
+        span:focus {
+          color: $body-text-white;
+          background-color: lighten($coz-dark, 10%);
+          border-color: lighten($coz-dark, 10%);
+        }
+      }
+    }
+    .active> {
+      a,
+      span,
+      a:hover,
+      span:hover,
+      a:focus,
+      span:focus {
+        color: $body-text-white;
+        background-color: lighten($coz-dark, 10%);
+        border-color: lighten($coz-dark, 10%);
+      }
+    }
+    .disabled> {
+      span {
+        color: rgba(255, 255, 255, 0.35);      
+        background-color: darken($coz-dark, 10%);
+        border-color: darken($coz-dark, 5%);
+        &:hover,
+        &:focus {
+          color: $body-text-white;
+          background-color: lighten($coz-dark, 10%);
+          border-color: lighten($coz-dark, 15%);
+        }
+      }
+      a {
+        color: rgba(255, 255, 255, 0.35);      
+        background-color: darken($coz-dark, 10%);
+        border-color: lighten($coz-dark, 10%);
+        &:hover,
+        &:focus {
+          background-color: darken($coz-dark, 10%);
+          border-color: lighten($coz-dark, 15%);
+        }
+      }
+    }
+  }
+}
+
+.pager {
+  li> {
+    a,
+    span {
+      color: $body-text-white;
+      background-color: $coz-dark;
+      border: 1px solid lighten($coz-dark, 10%);
+    }
+    a {
+      &:hover,
+      &:focus {
+        background-color: lighten($coz-dark, 10%);
+        border-color: lighten($coz-dark, 15%);
+      }
+    }
+  }
+  .disabled> {
+    a {
+      color: rgba(255, 255, 255, 0.35);      
+      background-color: darken($coz-dark, 10%);
+      border-color: darken($coz-dark, 5%);
+      &:hover,
+      &:focus {
+        background-color: darken($coz-dark, 10%);
+        border-color: darken($coz-dark, 5%);
+      }
+    }
+    span {
+      color: $body-text-white;
+      background-color: lighten($coz-dark, 10%);
+      border-color: lighten($coz-dark, 15%);
+    }
+  }
+}

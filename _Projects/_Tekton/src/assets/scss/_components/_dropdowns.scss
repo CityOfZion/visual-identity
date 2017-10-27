@@ -1,0 +1,187 @@
+.btn-group.open .btn-default.dropdown-toggle {
+  background-color: lighten($darker-grey, 15%);
+  color: $body-text-white;
+}
+
+.btn-default+.dropdown-menu {
+  background-color: lighten($darker-grey, 15%);
+  &>li>a {
+    color: $body-text-white;
+    &:hover,
+    &:focus {
+      background-color: rgba(0, 0, 0, .17);
+    }
+  }
+}
+
+.btn-group.open .btn-primary.dropdown-toggle {
+  background-color: lighten($coz-primary, 10%);
+  color: $body-text-white;
+}
+
+.btn-primary+.dropdown-menu {
+  background-color: lighten($coz-primary, 10%);
+  &>li>a {
+    color: $body-text-white;
+    &:hover,
+    &:focus {
+      background-color: rgba(0, 0, 0, .17);
+    }
+  }
+}
+
+.btn-group.open .btn-info.dropdown-toggle {
+  background-color: darken($info-blue, 15%);
+  color: $body-text-white;
+}
+
+.btn-info+.dropdown-menu {
+  background-color: darken($info-blue, 15%);
+  &>li>a {
+    color: $body-text-white;
+    &:hover,
+    &:focus {
+      background-color: rgba(0, 0, 0, .17);
+    }
+  }
+}
+
+.btn-group.open .btn-success.dropdown-toggle {
+  background-color: darken($success-green, 10%);
+  color: $body-text-white;
+}
+
+.btn-success+.dropdown-menu {
+  background-color: darken($success-green, 10%);
+  &>li>a {
+    color: $body-text-white;
+    &:hover,
+    &:focus {
+      background-color: rgba(0, 0, 0, .17);
+    }
+  }
+}
+
+.btn-group.open .btn-warning.dropdown-toggle {
+  background-color: darken($warning-orange, 15%);
+  color: $body-text-white;
+}
+
+.btn-warning+.dropdown-menu {
+  background-color: darken($warning-orange, 15%);
+  &>li>a {
+    color: $body-text-white;
+    &:hover,
+    &:focus {
+      background-color: rgba(255, 255, 255, .17);
+    }
+  }
+}
+
+.btn-group.open .btn-danger.dropdown-toggle {
+  background-color: darken($danger-red, 10%);
+  color: $body-text-white;
+}
+
+
+.btn-danger+.dropdown-menu {
+  background-color: darken($danger-red, 10%);
+  &>li>a {
+    color: $body-text-white;
+    &:hover,
+    &:focus {
+      background-color: rgba(0, 0, 0, .17);
+    }
+  }
+}
+
+.btn-group.open .btn-default.btn-outline.dropdown-toggle {
+  @include background_opacity(darken($darker-grey, 10%), 0.5);
+  + .dropdown-menu {
+    @include background_opacity(darken($darker-grey, 10%), 0.5);
+    border: 1px solid $darker-grey;
+    .divider {
+      opacity: .2;
+    }
+  }
+}
+
+.btn-group.open .btn-primary.btn-outline.dropdown-toggle {
+  @include background_opacity(darken($coz-primary, 10%), 0.5);
+  + .dropdown-menu {
+    @include background_opacity(darken($coz-primary, 10%), 0.5);
+    border: 1px solid $coz-primary;
+    .divider {
+      opacity: .2;
+    }
+  }
+}
+
+.btn-group.open .btn-info.btn-outline.dropdown-toggle {
+  @include background_opacity(darken($info-blue, 10%), 0.5);
+  + .dropdown-menu {
+    @include background_opacity(darken($info-blue, 10%), 0.5);
+    border: 1px solid $info-blue;
+    .divider {
+      opacity: .2;
+    }
+  }
+}
+
+.btn-group.open .btn-success.btn-outline.dropdown-toggle {
+  @include background_opacity(darken($success-green, 10%), 0.5);
+  + .dropdown-menu {
+    @include background_opacity(darken($success-green, 10%), 0.5);
+    border: 1px solid $success-green;
+    .divider {
+      opacity: .2;
+    }
+  }
+}
+
+.btn-group.open .btn-warning.btn-outline.dropdown-toggle {
+  @include background_opacity(darken($warning-orange, 10%), 0.5);
+  + .dropdown-menu {
+    @include background_opacity(darken($warning-orange, 10%), 0.5);
+    border: 1px solid $warning-orange;
+    .divider {
+      opacity: .2;
+    }
+  }
+}
+
+.btn-group.open .btn-danger.btn-outline.dropdown-toggle {
+  @include background_opacity(darken($danger-red, 10%), 0.5);
+  + .dropdown-menu {
+    @include background_opacity(darken($danger-red, 10%), 0.5);
+    border: 1px solid $danger-red;
+    .divider {
+      opacity: .2;
+    }
+  }
+}
+
+.open>.dropdown-toggle.btn-default:focus,
+.open>.dropdown-toggle.btn-default:hover {
+  border-color: $darker-grey-light;
+}
+.open>.dropdown-toggle.btn-primary:focus,
+.open>.dropdown-toggle.btn-primary:hover {
+  border-color: $coz-primary-dark;
+}
+.open>.dropdown-toggle.btn-info:focus,
+.open>.dropdown-toggle.btn-info:hover {
+  border-color: $info-blue-dark;
+}
+.open>.dropdown-toggle.btn-success:focus,
+.open>.dropdown-toggle.btn-success:hover {
+  border-color: $success-green-dark;
+}
+.open>.dropdown-toggle.btn-warning:focus,
+.open>.dropdown-toggle.btn-warning:hover {
+  border-color: $warning-orange-dark;
+}
+.open>.dropdown-toggle.btn-danger:focus,
+.open>.dropdown-toggle.btn-danger:hover {
+  border-color: $danger-red-dark;
+}

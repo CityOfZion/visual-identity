@@ -1,0 +1,180 @@
+.navbar-default {
+  background-color: $coz-dark;
+  border-color: $coz-dark;
+  .navbar-brand {
+    color: rgba(255, 255, 255, 0.7);
+    &:hover,
+    &:focus {
+      color: rgba(255, 255, 255, 1);
+      background-color: transparent;
+    }
+    &>img {
+      float: left;
+      max-height: 30px;
+      height: 30px;
+      width: auto;
+      &:hover,
+      &:focus {
+        opacity: 1;
+      }
+    }
+    &.coz-logo {
+      padding: 10px 15px;
+      &>p {
+        float: left;
+        display: inline-block;
+        margin-left: 15px;
+        margin-top: 5px;
+        color: rgba(255, 255, 255, 0.7);
+        font-family: 'Orbitron', sans-serif;
+        user-select: none;
+      }
+    }
+  }
+  .navbar-text {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .navbar-nav> {
+    li>a {
+      color: rgba(255, 255, 255, 0.7);
+      &:hover,
+      &:focus {
+        color: rgba(255, 255, 255, 1);
+        background-color: lighten($coz-dark, 20%);
+      }
+    }
+    .active>a {
+      color: rgba(255, 255, 255, 0.7);
+      background-color: lighten($coz-dark, 15%);
+      &:hover,
+      &:focus {
+        color: rgba(255, 255, 255, 1);
+        background-color: lighten($coz-dark, 20%);
+      }
+    }
+    .disabled>a {
+      color: rgba(255, 255, 255, 1);
+      background-color: transparent;
+      &:hover,
+      &:focus {
+        color: rgba(255, 255, 255, 1);
+        background-color: lighten($coz-dark, 15%);
+      }
+    }
+    .dropdown {
+      .dropdown-menu {
+        background-color: lighten($coz-dark, 20%);
+        padding-top: 0;
+        border: 0;
+        .divider {
+          margin: 4px 0;
+          background-color: $coz-dark;
+          opacity: .4;
+        }
+        a {
+          padding: 7px 15px;
+          color: rgba(255, 255, 255, 0.7);
+          &:hover,
+          &:focus {
+            color: rgba(255, 255, 255, 1);
+            background-color: lighten($coz-dark, 15%);
+          }
+        }
+      }
+    }
+  }
+  .navbar-toggle {
+    border-color: lighten($coz-dark, 20%);
+    &:hover,
+    &:focus {
+      background-color: lighten($coz-dark, 20%);
+    }
+    .icon-bar {
+      background-color: $coz-yellow;
+      opacity: 0.7;
+    }
+  }
+  .navbar-collapse,
+  .navbar-form {
+    border-color: darken($coz-dark, 15%);
+  }
+  .navbar-form {
+    input[type="text"] {
+      border: 1px solid lighten($coz-dark, 15%);
+      border-radius: 3px 0 0 3px;
+      background-color: transparent;
+      color: rgba(255, 255, 255, .7);
+    }
+    button {
+      border-radius: 0 3px 3px 0;
+      background-color: transparent;
+      border: 1px solid lighten($coz-dark, 15%);
+      border-left: 0;
+      box-shadow: none;
+      background-color: lighten($coz-dark, 15%);
+      ;
+    }
+  }
+  .navbar-nav>.open>a {
+    background-color: lighten($coz-dark, 20%);
+    color: rgba(255, 255, 255, 0.7);
+    &:hover,
+    &:focus {
+      background-color: lighten($coz-dark, 15%);
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+  .navbar-link {
+    color: rgba(255, 255, 255, 0.7);
+    &:hover {
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+  .btn-link {
+    color: rgba(255, 255, 255, 0.7);
+    &:hover,
+    &:focus {
+      color: rgba(255, 255, 255, 1);
+    }
+    &[disabled]:hover {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu> {
+    li>a {
+      color: rgba(255, 255, 255, 0.7);
+      &:hover,
+      &:focus {
+        color: rgba(255, 255, 255, 1);
+        background-color: transparent;
+      }
+    }
+    .active>a {
+      color: rgba(255, 255, 255, 1);
+      background-color: #e7e7e7;
+      &:hover,
+      &:focus {
+        color: rgba(255, 255, 255, 1);
+        background-color: #e7e7e7;
+      }
+    }
+    .disabled>a {
+      color: rgba(255, 255, 255, 0.4);
+      background-color: transparent;
+      &:hover,
+      &:focus {
+        color: rgba(255, 255, 255, 0.4);
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+fieldset[disabled] .navbar-default .btn-link:hover,
+.navbar-default .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-default .btn-link:focus {
+  color: #ccc;
+}

@@ -1,0 +1,44 @@
+.progress {
+  height: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: lighten($coz-dark, 10%);
+  border-radius: 2px;
+  @include box_shadow(1);
+}
+
+.progress-bar {
+  background-color: $coz-dark-blue;
+}
+
+.progress-bar.progress-bar-primary {
+  background-color: $coz-primary;
+}
+
+.progress-bar.progress-bar-info {
+  background-color: $info-blue;
+}
+
+.progress-bar.progress-bar-success {
+  background-color: $success-green;
+}
+
+.progress-bar.progress-bar-warning {
+  background-color: $warning-orange;
+  color: darken($warning-orange, 25%);
+  font-weight: 600;
+}
+
+.progress-bar.progress-bar-danger {
+  background-color: $danger-red;
+}
+
+.progress-bar.progress-bar-coz {
+  background-color: $coz-yellow;
+  color: darken($coz-yellow, 25%);
+  font-weight: 600;
+}
+
+.progress-bar.progress-bar-neo {
+  background-color: $neo-green;
+}

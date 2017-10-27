@@ -1,0 +1,627 @@
+.btn {
+  color: #fff;
+  background-color: $darker-grey;
+  border-color: $darker-grey;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 3px;
+  font-family: $body-font;
+  font-weight: 400;
+  padding: 6px 13px;
+  border: 0;
+  @include box-shadow(2);
+  i {
+    padding-right: 3px;
+    padding-left: 3px;
+  }
+}
+
+.btn-default {
+  color: #fff;
+  background-color: $darker-grey;
+  border-color: $darker-grey;
+  transition: all .2s ease-in-out;
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    color: #fff;
+    background-color: $darker-grey-light;
+    border-color: $darker-grey-light;
+    outline: 0;
+    @include box-shadow(3)
+  }
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: $coz-primary;
+  border-color: $coz-primary;
+  transition: all .2s ease-in-out;
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    color: #fff;
+    background-color: $coz-primary-dark;
+    border-color: $coz-primary-dark;
+    outline: 0;
+    @include box-shadow(3);
+  }
+}
+
+.btn-success {
+  color: #fff;
+  background-color: $success-green;
+  border-color: $success-green;
+  transition: all .2s ease-in-out;
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    color: #fff;
+    background-color: $success-green-dark;
+    border-color: $success-green-dark;
+    outline: 0;
+    @include box-shadow(3);
+  }
+}
+
+.btn-warning {
+  color: #fff;
+  background-color: $warning-orange;
+  border-color: $warning-orange;
+  transition: all .2s ease-in-out;
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    color: #fff;
+    background-color: $warning-orange-dark;
+    border-color: $warning-orange-dark;
+    outline: 0;
+    @include box-shadow(3);
+  }
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: $danger-red;
+  border-color: $danger-red;
+  transition: all .2s ease-in-out;
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    color: #fff;
+    background-color: $danger-red-dark;
+    border-color: $danger-red-dark;
+    outline: 0;
+    @include box-shadow(3);
+  }
+}
+
+.btn-info {
+  color: #fff;
+  background-color: $info-blue;
+  border-color: $info-blue;
+  transition: all .2s ease-in-out;
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    color: #fff;
+    background-color: $info-blue-dark;
+    border-color: $info-blue-dark;
+    outline: 0;
+    @include box-shadow(3);
+  }
+}
+
+.btn-default.btn-gradient {
+  background-image: linear-gradient(90deg, $darker-grey 0%, $grey 51%, $grey-dark 100%);
+  border: 0;
+  border-color: transparent;
+  color: #fff;
+  background-size: 200% auto;
+  transition: all .2s ease-in-out;
+  &:hover {
+    background-position: right, center;
+    color: #fff;
+    @include box-shadow(3);
+  }
+}
+
+.btn-primary.btn-gradient {
+  background-image: linear-gradient(90deg, $coz-blue 0%, $coz-primary 51%, $coz-primary-dark 100%);
+  border: 0;
+  border-color: transparent;
+  color: #fff;
+  background-size: 200% auto;
+  transition: all .2s ease-in-out;
+  &:hover {
+    background-position: right, center;
+    color: #fff;
+    @include box-shadow(3);
+  }
+}
+
+.btn-success.btn-gradient {
+  background-image: linear-gradient(90deg, darken($success-green, 10%) 0%, $success-green 51%, darken($success-green, 10%) 100%);
+  border: 0;
+  border-color: transparent;
+  color: #fff;
+  background-size: 200% auto;
+  transition: all .2s ease-in-out;
+  &:hover {
+    background-position: right, center;
+    color: #fff;
+    @include box-shadow(3);
+  }
+}
+
+.btn-info.btn-gradient {
+  background-image: linear-gradient(90deg, darken($info-blue, 10%) 0%, $info-blue 51%, darken($info-blue, 10%) 100%);
+  border: 0;
+  border-color: transparent;
+  color: #fff;
+  background-size: 200% auto;
+  transition: all .2s ease-in-out;
+  &:hover {
+    background-position: right, center;
+    color: #fff;
+    @include box-shadow(3);
+  }
+}
+
+.btn-warning.btn-gradient {
+  background-image: linear-gradient(90deg, darken($warning-orange, 10%) 0%, $warning-orange 51%, darken($warning-orange, 10%) 100%);
+  border: 0;
+  border-color: transparent;
+  color: #fff;
+  background-size: 200% auto;
+  transition: all .2s ease-in-out;
+  &:hover {
+    background-position: right, center;
+    color: #fff;
+    @include box-shadow(3);
+  }
+}
+
+.btn-danger.btn-gradient {
+  background-image: linear-gradient(90deg, darken($danger-red, 10%) 0%, $danger-red 51%, darken($danger-red, 10%) 100%);
+  border: 0;
+  border-color: transparent;
+  color: #fff;
+  background-size: 200% auto;
+  transition: all .2s ease-in-out;
+  &:hover {
+    background-position: right, center;
+    color: #fff;
+    @include box-shadow(3);
+  }
+}
+
+.btn-default.btn-outline {
+  background-color: transparent;
+  border: 1px solid $darker-grey;
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    background-color: transparent;
+    border-color: $darker-grey-light;
+  }
+}
+
+.btn-primary.btn-outline {
+  background-color: transparent;
+  border: 1px solid $coz-primary;
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    background-color: transparent;
+    border-color: $coz-primary-dark;
+  }
+}
+
+.btn-success.btn-outline {
+  background-color: transparent;
+  border: 1px solid $success-green;
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    background-color: transparent;
+    border-color: $success-green-dark;
+  }
+}
+
+.btn-info.btn-outline {
+  background-color: transparent;
+  border: 1px solid $info-blue;
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    background-color: transparent;
+    border-color: $info-blue-dark;
+  }
+}
+
+.btn-warning.btn-outline {
+  background-color: transparent;
+  border: 1px solid $warning-orange;
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    background-color: transparent;
+    border-color: $warning-orange-dark;
+  }
+}
+
+.btn-danger.btn-outline {
+  background-color: transparent;
+  border: 1px solid $danger-red;
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    background-color: transparent;
+    border-color: $danger-red-dark;
+  }
+}
+
+.btn-chipped {
+  position: relative;
+  border-radius: 0;
+  padding: 6px 26px 6px 13px;
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    @include box-shadow(3);
+  }
+}
+
+.btn-chipped:after {
+  content: "";
+  right: -4px;
+  position: absolute;
+  display: inline-block;
+  width: 15px;
+  bottom: 0;
+  top: 0;
+  transform: skew(-15deg);
+  transition: all .2s ease-in-out;
+}
+
+.btn-default.btn-chipped:after {
+  border: 1px solid $darker-grey;
+  background-color: $darker-grey;
+}
+
+.btn-default.btn-chipped {
+  transition: all .2s ease-in-out;
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    &:after {
+      background-color: $darker-grey-light;
+      border-color: $darker-grey-light;
+    }
+    background-color: $darker-grey-light;
+  }
+}
+
+.btn-primary.btn-chipped:after {
+  border: 1px solid $coz-primary;
+  background-color: $coz-primary;
+}
+
+.btn-primary.btn-chipped {
+  transition: all .2s ease-in-out;
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    &:after {
+      background-color: $coz-primary-dark;
+      border-color: $coz-primary-dark;
+    }
+    background-color: $coz-primary-dark;
+  }
+}
+
+.btn-success.btn-chipped:after {
+  border: 1px solid $success-green;
+  background-color: $success-green;
+}
+
+.btn-success.btn-chipped {
+  transition: all .2s ease-in-out;
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    &:after {
+      background-color: $success-green-dark;
+      border-color: $success-green-dark;
+    }
+    background-color: $success-green-dark;
+  }
+}
+
+.btn-info.btn-chipped:after {
+  border: 1px solid $info-blue;
+  background-color: $info-blue;
+}
+
+.btn-info.btn-chipped {
+  transition: all .2s ease-in-out;
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    &:after {
+      background-color: $info-blue-dark;
+      border-color: $info-blue-dark;
+    }
+    background-color: $info-blue-dark;
+  }
+}
+
+.btn-warning.btn-chipped:after {
+  border: 1px solid $warning-orange;
+  background-color: $warning-orange;
+}
+
+.btn-warning.btn-chipped {
+  transition: all .2s ease-in-out;
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    &:after {
+      background-color: $warning-orange-dark;
+      border-color: $warning-orange-dark;
+    }
+    background-color: $warning-orange-dark;
+  }
+}
+
+.btn-danger.btn-chipped:after {
+  border: 1px solid $danger-red;
+  background-color: $danger-red;
+}
+
+.btn-danger.btn-chipped {
+  transition: all .2s ease-in-out;
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus,
+  &:active.focus,
+  &.active,
+  &.active:hover,
+  &.active:focus,
+  &.active.focus &.focus {
+    &:after {
+      background-color: $danger-red-dark;
+      border-color: $danger-red-dark;
+    }
+    background-color: $danger-red-dark;
+  }
+}
+
+.btn-rounded {
+  border-radius: 50px;
+}
+
+.btn-square {
+  border-radius: 0;
+}
+
+.btn-xs {
+  font-size: 10px;
+  padding: 2px 6px;
+  font-weight: 400;
+}
+
+.btn-sm {
+  font-size: 12px;
+  padding: 4px 6px;
+  font-weight: 400;
+}
+
+.btn-lg {}
+
+.btn-block {
+  display: block;
+}
+
+.btn-icon-round {
+  padding: 6px 7px;
+  border-radius: 100px;
+  line-height: 36px;
+  width: 48px;
+  height: 48px;
+  i {
+    font-size: 16px;
+  }
+  &.btn-xs {
+    width: 24px;
+    height: 24px;
+    padding: 4px 3px;
+    line-height: 16px;
+    i {
+      font-size: 14px;
+    }
+  }
+  &.btn-sm {
+    width: 32px;
+    height: 32px;
+    padding: 5px 6px;
+    line-height: 24px;
+    i {
+      font-size: 14px;
+    }
+  }
+  &.btn-lg {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    i {
+      font-size: 36px;
+    }
+  }
+}
+
+.btn-icon-square {
+  width: 48px;
+  height: 48px;
+  border-radius: 0;
+  padding: 6px 7px;
+  line-height: 36px;
+  i {
+    font-size: 16px;
+  }
+  &.btn-xs {
+    width: 24px;
+    height: 24px;
+    padding: 5px 3px;
+    line-height: 16px;
+    i {
+      font-size: 14px;
+    }
+  }
+  &.btn-sm {
+    width: 32px;
+    height: 32px;
+    padding: 5px 6px;
+    line-height: 24px;
+    i {
+      font-size: 14px;
+    }
+  }
+  &.btn-lg {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    i {
+      font-size: 36px;
+    }
+  }
+}

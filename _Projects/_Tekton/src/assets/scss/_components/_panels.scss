@@ -1,0 +1,213 @@
+.panel {
+  box-shadow: none;
+  color: $body-text-white;
+  background-color: $panel-background-color;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  .panel-heading {
+    font-weight: 700;
+    color: $panel-heading-text;
+    .panel-tools {
+      display: inline-block;
+      float: right;
+      margin-top: 0;
+      padding: 0;
+      position: relative;
+    }
+  }
+  .panel-footer {
+    background-color: transparent;
+    border-top-color: transparent;
+  }
+}
+
+.panel.accent-panel {
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "";
+    width: 3px;
+    top: 0;
+    bottom: 0;
+    left: -1px;
+    background-color: transparent;
+    border-radius: 3px 0 0 3px;
+  }
+}
+
+.panel.accent-panel-default {
+  &:before {
+    background-color: $darker-grey;
+  }
+}
+
+.panel.accent-panel-primary {
+  &:before {
+    background-color: $coz-primary;
+  }
+}
+
+.panel.accent-panel-info {
+  &:before {
+    background-color: $info-blue;
+  }
+}
+
+.panel.accent-panel-success {
+  &:before {
+    background-color: $success-green;
+  }
+}
+
+.panel.accent-panel-warning {
+  &:before {
+    background-color: $warning-orange;
+  }
+}
+
+.panel.accent-panel-danger {
+  &:before {
+    background-color: $danger-red;
+  }
+}
+
+.panel.gradient-panel {
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "";
+    width: 3px;
+    top: 0;
+    bottom: 0;
+    left: -1px;
+    background-image: none;
+    border-radius: 3px 0 0 3px;
+  }
+}
+
+.panel.gradient-panel-default {
+  &:before {
+    background-image: linear-gradient(0deg, $darker-grey 0%, $grey 100%);
+  }
+}
+
+.panel.gradient-panel-primary {
+  &:before {
+    background-image: linear-gradient(0deg, $coz-blue 0%, $coz-primary 100%);
+  }
+}
+
+.panel.gradient-panel-info {
+  &:before {
+    background-image: linear-gradient(0deg, darken($info-blue, 25%) 0%, $info-blue 100%);
+  }
+}
+
+.panel.gradient-panel-success {
+  &:before {
+    background-image: linear-gradient(0deg, darken($success-green, 20%) 0%, $success-green 100%);
+  }
+}
+
+.panel.gradient-panel-warning {
+  &:before {
+    background-image: linear-gradient(0deg, darken($warning-orange, 35%) 0%, $warning-orange 100%);
+  }
+}
+
+.panel.gradient-panel-danger {
+  &:before {
+    background-image: linear-gradient(0deg, darken($danger-red, 15%) 0%, $danger-red 100%);
+  }
+}
+
+.panel.outline-panel-default {
+  border: 1px solid $darker-grey;
+}
+
+.panel.outline-panel-primary {
+  border: 1px solid $coz-blue;
+}
+
+.panel.outline-panel-info {
+  border: 1px solid $info-blue;
+}
+
+.panel.outline-panel-success {
+  border: 1px solid $success-green;
+}
+
+.panel.outline-panel-warning {
+  border: 1px solid $warning-orange;
+}
+
+.panel.outline-panel-danger {
+  border: 1px solid $danger-red;
+}
+
+.panel.panel-transparent {
+  background-color: transparent;
+  background: transparent;
+}
+
+.panel.chipped-panel:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 0px solid transparent;
+  border-left: 20px solid $panel-background-color;
+  right: -5px;
+}
+
+.panel.chipped-panel:after {
+  content: "";
+  width: 20px;
+  background-color: $panel-background-color;
+  position: absolute;
+  right: -5px;
+  height: calc(100% - 40px);
+  bottom: 0;
+  top: 20px;
+  border-radius: 0 0 3px 0;
+}
+
+.panel.chipped-panel.gradient-panel-default,
+.panel.chipped-panel.accent-panel-default {
+  border-left: 3px solid $darker-grey;
+}
+
+.panel.chipped-panel.gradient-panel-primary,
+.panel.chipped-panel.accent-panel-primary {
+  border-left: 3px solid $coz-primary;
+}
+
+.panel.chipped-panel.gradient-panel-info,
+.panel.chipped-panel.accent-panel-info {
+  border-left: 3px solid $info-blue;
+}
+
+.panel.chipped-panel.gradient-panel-success,
+.panel.chipped-panel.accent-panel-success {
+  border-left: 3px solid $success-green;
+}
+
+.panel.chipped-panel.gradient-panel-warning,
+.panel.chipped-panel.accent-panel-warning {
+  border-left: 3px solid $warning-orange;
+}
+
+.panel.chipped-panel.gradient-panel-danger,
+.panel.chipped-panel.accent-panel-danger {
+  border-left: 3px solid $danger-red;
+}
+
+.panel.accent-panel-default.chipped-panel:before,
+.panel.accent-panel-primary.chipped-panel:before,
+.panel.accent-panel-info.chipped-panel:before,
+.panel.accent-panel-success.chipped-panel:before,
+.panel.accent-panel-warning.chipped-panel:before,
+.panel.accent-panel-danger.chipped-panel:before {
+  background-color: transparent;
+}
